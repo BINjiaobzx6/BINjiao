@@ -1,0 +1,204 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/nBq2D86q"))()
+local window = library:new("")
+
+local creds = window:Tab("信息",'16060333448')
+
+local bin = creds:section("玩家信息",true)
+
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("你的注入器:"..identifyexecutor())
+    
+    local bin = creds:section("作者信息",true)
+    bin:Label("官群817708872:")
+    bin:Label("作者:bin")
+    bin:Label("该脚本15元进群免费")
+    bin:Label("倒卖思慕")
+    bin:Label("随机几次更新")
+    
+local credits = creds:section("关闭",true)
+
+credits:Toggle("脚本框架变小一点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+    credits:Button("关闭悬浮窗",function()
+        game:GetService("CoreGui")["frosty"]:Destroy()
+    end)
+
+local creds = window:Tab("doors",'16060333448')
+
+local credits = creds:section("doors",true)
+    credits:Button("最强",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+end)
+
+credits:Button("后门脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Backdoors.lua"))()
+end)
+
+    credits:Button("小云汉化doors",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/EntitySpawner/main/doors(orionlib).lua"))()
+end)
+
+    credits:Button("doors通用",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+
+    credits:Button("doors变形",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+end)
+
+credits:Button("doors获取夜视仪",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+end)
+
+credits:Button("微山DOORS1.4",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+end)
+
+    credits:Button("自动过rooms",function()
+    loadstring(game:HttpGet('\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x2E\x6C\x6B\x6D\x63\x2E\x61\x73\x69\x61\x2F\x73\x63\x72\x69\x70\x74\x2F\x64\x6F\x6F\x72\x73\x72\x6F\x6F\x6D\x2E\x6C\x75\x61'))()
+end)
+
+credits:Button("doors汉化脚本",function()
+    --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+end)
+
+credits:Button("doors深渊正式版",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhdbxub/sdhdbxub/main/sjznwijxwislf.TXT"))()
+end)
+
+local creds = window:Tab("doors模式",'16060333448')
+
+local credits = creds:section("doors模式在23愚人节执行",true)
+    credits:Button("doors破片模式V4",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+end)
+
+credits:Button("doors极端模式",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+end)
+
+credits:Button("doors硬核模式",function()
+    loadstring(game:HttpGet('https://github.com/HollowedOutMods/MayhemMode/blob/main/loader.lua?raw=true'))()
+end)
+
+credits:Button("doors不可能模式",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+end)
+
+local creds = window:Tab("其余脚本",'16060333448')
+
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/nBq2D86q"))()
+local window = library:new("")
+
+local creds = window:Tab("信息",'16060333448')
+
+local bin = creds:section("玩家信息",true)
+
+    bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("你的注入器:"..identifyexecutor())
+    
+    local bin = creds:section("作者信息",true)
+    bin:Label("官群817708872:")
+    bin:Label("作者:bin")
+    bin:Label("该脚本15元进群免费")
+    bin:Label("倒卖思慕")
+    bin:Label("随机几次更新")
+    
+local credits = creds:section("关闭",true)
+
+credits:Toggle("脚本框架变小一点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+    credits:Button("关闭悬浮窗",function()
+        game:GetService("CoreGui")["frosty"]:Destroy()
+    end)
+
+local creds = window:Tab("doors",'16060333448')
+
+local credits = creds:section("doors",true)
+    credits:Button("最强",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+end)
+
+credits:Button("后门脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Backdoors.lua"))()
+end)
+
+    credits:Button("小云汉化doors",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/EntitySpawner/main/doors(orionlib).lua"))()
+end)
+
+    credits:Button("doors通用",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+
+    credits:Button("doors变形",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+end)
+
+credits:Button("doors获取夜视仪",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+end)
+
+credits:Button("微山DOORS",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+end)
+
+    credits:Button("自动过rooms",function()
+    loadstring(game:HttpGet('\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x2E\x6C\x6B\x6D\x63\x2E\x61\x73\x69\x61\x2F\x73\x63\x72\x69\x70\x74\x2F\x64\x6F\x6F\x72\x73\x72\x6F\x6F\x6D\x2E\x6C\x75\x61'))()
+end)
+
+credits:Button("doors汉化脚本",function()
+    --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+end)
+
+credits:Button("doors变身脚本",function()
+    
+end)
+
+credits:Button("doors深渊正式版",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhdbxub/sdhdbxub/main/sjznwijxwislf.TXT"))()
+end)
+
+local creds = window:Tab("doors模式",'16060333448')
+
+local credits = creds:section("doors模式在23愚人节执行",true)
+
+    credits:Button("doors破片模式V4",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+end)
+
+credits:Button("doors极端模式",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+end)
+
+credits:Button("doors硬核模式",function()
+    loadstring(game:HttpGet('https://github.com/HollowedOutMods/MayhemMode/blob/main/loader.lua?raw=true'))()
+end)
+
+local creds = window:Tab("其他脚本",'16060333448')
+
+local credits:Button("幻脚本",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/RPMMiF5y"))()
+end)
+
+credits:Button("导管中心",function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
+end)
+
+credits:Button("退休脚本",function()
+    loadstring(game:HttpGet("https://shz.al/~TUIXUI_Q_Q/退休_qun=560735524.txt"))()
+end)
+
+credits:Button("脚本中心V1.5",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+end)
