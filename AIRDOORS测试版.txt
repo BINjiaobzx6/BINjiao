@@ -1,0 +1,214 @@
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
+Library.Theme = "Dark"
+local Flags = Library.Flags
+
+local Window = Library:Window({
+   Text = "AIRDOORS"
+})
+
+local Tab = Window:Tab({
+   Text = "主要的"
+})
+
+local Tab2 = Window:Tab({
+   Text = "关于"
+})
+
+local Tab3 = Window:Tab({
+   Text = "下次更新时间"
+})
+
+local Tab4 = Window:Tab({
+   Text = "群聊事件"
+})
+
+local Section = Tab:Section({
+   Text = "点我打开功能"
+})
+
+local Section2 = Tab2:Section({
+   Text = "该脚本作者QQ:1342087454"
+})
+
+local Section2 = Tab2:Section({
+   Text = "作者:AIR自制脚本"
+})
+
+local Section2 = Tab2:Section({
+   Text = "除了UI，其余全是自己的做的"
+})
+
+local Section2 = Tab2:Section({
+   Text = "倒卖的，你全家得死来世不得投胎"
+})
+
+local Section3 = Tab3:Section({
+   Text = "更新时间:不定时期"
+})
+local Section4 = Tab4:Section({
+   Text = "作者群聊:229161724"
+})
+
+Section:Button({
+   Text = "十字架",
+   Callback = function()
+       warn("十字架")
+		loadstring(game:HttpGet('https://pastebin.com/raw/ibbWwU6q'))()
+   end
+})
+
+Section:Button({
+   Text = "神圣手榴弹",
+   Callback = function()
+       warn("神圣手榴弹")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sharksharksharkshark/musical-pancake/main/huo.txt"))()
+   end
+})
+
+Section:Button({
+   Text = "透视",
+   Callback = function()
+       warn("透视")
+		loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+   end
+})
+
+Section:Button({
+   Text = "剪刀",
+   Callback = function()
+       warn("剪刀")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+   end
+})
+
+Section:Button({
+   Text = "穿墙",
+   Callback = function()
+       warn("穿墙")
+		loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+   end
+})
+
+Section:Button({
+   Text = "立即互动",
+   Callback = function()
+       warn("立即互动")
+		loadstring(game:HttpGet("https://pastebin.com/raw/i8qS93UK"))()
+   end
+})
+
+Section:Toggle({
+   Text = "高亮",
+   Callback = function(bool)
+       warn(bool)
+       loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+   end
+})
+
+Section:Toggle({
+   Text = "跳过房间",
+   Callback = function(bool)
+       warn(bool)
+       pcall(function()
+            local HasKey = false
+            local CurrentDoor = workspace.CurrentRooms[tostring(game:GetService("ReplicatedStorage").GameData.LatestRoom.Value)]:WaitForChild("Door")
+            for i,v in ipairs(CurrentDoor.Parent:GetDescendants()) do
+                if v.Name == "KeyObtain" then
+                    HasKey = v
+                end
+            end
+            if HasKey then
+                game.Players.LocalPlayer.Character:PivotTo(CF(HasKey.Hitbox.Position))
+                wait(0.3)
+                fireproximityprompt(HasKey.ModulePrompt,0)
+                game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
+                wait(0.3)
+                fireproximityprompt(CurrentDoor.Lock.UnlockPrompt,0)
+            end
+            if LatestRoom == 50 then
+                CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom+1)]:WaitForChild("Door")
+            end
+            game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
+            wait(0.3)
+            CurrentDoor.ClientOpen:FireServer()
+        end)
+  	end    
+})
+
+local NotificationCoroutine = coroutine.create(function()
+    LatestRoom.Changed:Connect(function()
+        if OrionLib.Flags["PredictToggle"].Value == true then
+            local n = ChaseStart.Value - LatestRoom.Value
+            if 0 < n and n < 4 then
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "事件发生在" .. tostring(n) .. " 房间.",
+                    Time = 5
+                })
+            end
+        end
+        if OrionLib.Flags["BookToggle"].Value == true then
+            if LatestRoom.Value == 50 then
+                coroutine.resume(BookCoroutine)
+            end
+        end
+        if OrionLib.Flags["FigureToggle"].Value == true then
+            if LatestRoom.Value == 50 then
+                coroutine.resume(EntityCoroutine)
+            end
+        end
+    end)
+    workspace.ChildAdded:Connect(function(inst)
+        if inst.Name == "狂奔" and OrionLib.Flags["MobToggle"].Value == true then
+            if OrionLib.Flags["AvoidRushToggle"].Value == true then
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "避免匆忙。请稍等。",
+                    Time = 5
+                })
+                local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                local con = game:GetService("RunService").Heartbeat:Connect(function()
+                    game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,20,0))
+                end)
+                
+                inst.Destroying:Wait()
+                con:Disconnect()
+
+                game.Players.LocalPlayer.Character:MoveTo(OldPos)
+            else
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "拉什已经繁殖了，躲起来！",
+                    Time = 5
+                })
+            end
+        elseif inst.Name == "AmbushMoving" and OrionLib.Flags["MobToggle"].Value == true then
+            if OrionLib.Flags["AvoidRushToggle"].Value == true then
+                OrionLib:MakeNotification({
+                    Name = "警告!",
+                    Content = "躲避伏击。请稍等。",
+                    Time = 5
+                })
+                local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                local con = game:GetService("RunService").Heartbeat:Connect(function()
+                    game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,20,0))
+                end)
+                
+                inst.Destroying:Wait()
+                con:Disconnect()
+                
+                game.Players.LocalPlayer.Character:MoveTo(OldPos)
+            else
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "有埋伏了，躲起来！",
+                    Time = 5
+                })
+            end
+        end
+    end)
+end)
+
+--// ok actual code ends here
+
+Tab:Select()
