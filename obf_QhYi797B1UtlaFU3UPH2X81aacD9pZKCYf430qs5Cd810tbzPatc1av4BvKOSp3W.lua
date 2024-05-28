@@ -76,7 +76,7 @@ Heartbeat:Connect(HeartbeatUpdate);
 local CoreGui = game:GetService("StarterGui");
 CoreGui:SetCore("SendNotification", {Title="🇨🇳空脚本🇨🇳",Text="进入成功，感谢您的游玩",Duration=5});
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/1mPger1J"))();
-local Window = OrionLib:MakeWindow({IntroText="🇨🇳空脚本Empty script🇨🇳",Name="Empty 空脚本V1.0.1",HidePremium=false,SaveConfig=true,ConfigFolder=""});
+local Window = OrionLib:MakeWindow({IntroText="🇨🇳空脚本Empty script🇨🇳",Name="Empty 空脚本",HidePremium=false,SaveConfig=true,ConfigFolder=""});
 local about = Window:MakeTab({Name="公告栏必看",Icon="rbxassetid://4483345998",PremiumOnly=false});
 about:AddParagraph("作者:1342087454🇨🇳", "");
 about:AddParagraph("官方群聊:229161724🇨🇳", "");
