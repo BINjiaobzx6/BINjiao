@@ -588,12 +588,6 @@ end});
 Tab:AddButton({Name="fuhfhjgcgjb脚本",Callback=function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Moonsec/moonsec/moonsec.lua"))();
 end});
-Tab:AddButton({Name="复制斌脚本卡密",Callback=function()
-	setclipboard("bin2024HADE");
-end});
-Tab:AddButton({Name="斌脚本（目前已退圈）",Callback=function()
-	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\66\73\78\46\108\117\97\34\41\41\40\41\10")("BIN制作");
-end});
 Tab:AddButton({Name="复制卡密USA的卡密",Callback=function()
 	setclipboard("USA AER");
 end});
