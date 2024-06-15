@@ -1,0 +1,198 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/hhhjvhui.lua"))()
+local window = library:new("空脚本V1.0.3")
+
+local creds = window:Tab("使用脚本必看",'17860099393')
+
+local bin = creds:section("玩家信息",true)
+
+    bin:Label("用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("注入器:"..identifyexecutor())
+    
+    local bin = creds:section("空群NN中心:263575982",true)
+    bin:Label("群2:965316109")
+    bin:Label("空新主群:965647304")
+    bin:Label("，作者:EMPTY")
+    bin:Label("空作者:永远免费")
+    
+local credits = creds:section("关闭",true)
+
+credits:Toggle("脚本框架变小一点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+
+local creds = window:Tab("公认四大傻逼QQ",'17860099393')
+local credits = creds:section("四个傻逼",true)
+credits:Button("3792988312",function()
+    setclipboard("3792988312")
+end)
+    
+credits:Button("1431046659",function()
+    setclipboard("1431046659")
+end)
+
+credits:Button("3667156330",function()
+    setclipboard("3667156330")
+end)
+
+credits:Button("2454580192",function()
+    setclipboard("2454580192")
+end)
+
+credits:Button("四大傻逼群聊",function()
+    setclipboard("814705174")
+end)
+
+local creds = window:Tab("复制群聊",'17860099393')
+
+local credits = creds:section("关于群聊",true)
+    credits:Button("复制空NN主群",function()
+    setclipboard("263575982")
+end)
+    credits:Button("群二",function()
+    setclipboard("965316109")
+end)
+    credits:Button("新主群",function()
+    setclipboard("965647304")
+end)
+
+local creds = window:Tab("作者制作的其他脚本",'17860099393')
+
+local credits = creds:section("作者制作的其他脚本",true)
+    credits:Button("空脚本1.0.1",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%ACV1.0.1.txt"))()
+end)
+    credits:Button("空脚本1.0.2",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
+end)
+
+credits:Button("空透视",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E9%80%8F%E8%A7%86.lua"))()
+end)
+
+local creds = window:Tab("DOORS👁",'17860099393')
+
+local credits = creds:section("功能",true)
+    credits:Button("穿墙",function()
+    loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+end)
+
+credits:Button("十字架",function()
+    local shadow=game:GetObjects("rbxassetid://11498423088")[1]
+shadow.Parent = game.Players.LocalPlayer.Backpack
+local Players = game:GetService("Players")
+local Plr = Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+local Hum = Char:WaitForChild("Humanoid")
+local RightArm = Char:WaitForChild("RightUpperArm")
+local LeftArm = Char:WaitForChild("LeftUpperArm")
+local RightC1 = RightArm.RightShoulder.C1
+local LeftC1 = LeftArm.LeftShoulder.C1
+        local function setupCrucifix(tool)
+        RightArm.Name = "R_Arm"
+        LeftArm.Name = "L_Arm"
+        
+        RightArm.RightShoulder.C1 = RightC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+        LeftArm.LeftShoulder.C1 = LeftC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+        for _, v in next, Hum:GetPlayingAnimationTracks() do
+            v:Stop()
+        end
+        end
+shadow.Equipped:Connect(function()
+setupCrucifix(shadow)
+game.Players.LocalPlayer:SetAttribute("Hidden", true)
+end)
+end)
+
+credits:Button("全地图发光",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+end)
+
+credits:Button("骷髅钥匙",function()
+   local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack 
+end)
+
+credits:Button("圣光手榴弹",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+end)
+
+credits:Button("剪刀",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+end)
+
+local credits = creds:section("其他脚本",true)
+credits:Button("汉化脚本",function()
+    --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+end)
+
+credits:Button("微山doors",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+end)
+
+credits:Button("NBDOORS",function()
+    loadstring(game:HttpGet("https://github.com/DocYogurt/DOORS/raw/main/Loader.lua"))()
+end)
+
+credits:Button("点我复制NB卡密",function()
+    setclipboard("NB")
+end)
+
+local creds = window:Tab("DOORS模式👁",'17860099393')
+
+local credits = creds:section("模式",true)
+    credits:Button("硬核重置",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gp5pu59o7f/raw"))()
+end)
+
+credits:Button("破片V4",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+end)
+
+credits:Button("不可能模式",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+end)
+
+credits:Button("禁止模式",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
+end)
+
+local creds = window:Tab("ROOMS &DOORS",'17860099393')
+
+local credits = creds:section("其余脚本",true)
+    credits:Button("情云脚本",function()
+    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+end)
+
+credits:Button("高亮",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+end)
+
+local creds = window:Tab("射击类脚本",'17860099393')
+
+local credits = creds:section("射击类",true)
+    credits:Button("空透范围",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E9%80%8F%E8%A7%86.lua"))()
+end)
+
+credits:Button("无限跳",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+end)
+
+credits:Button("小范围推荐",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
+end)
+
+credits:Button("中等范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+end)
+
+credits:Button("超大范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+end)
+
+credits:Button("空中行走",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+end)
