@@ -1,0 +1,546 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/hhhjvhui.lua"))()
+local window = library:new("空脚本V1.0.3")
+
+local creds = window:Tab("使用脚本必看",'17860099393')
+
+local bin = creds:section("玩家信息",true)
+
+    bin:Label("用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("注入器:"..identifyexecutor())
+    
+    local bin = creds:section("关于",true)
+    bin:Label("群2:965316109")
+    bin:Label("空新主群:965647304")
+    bin:Label("，作者:EMPTY")
+    bin:Label("空作者:永远免费")
+    
+local credits = creds:section("关闭",true)
+
+credits:Toggle("缩小一点点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
+local creds = window:Tab("使用脚本必看",'17860099393')
+
+local bin = creds:section("关于作者",true)
+
+bin:Label("作者需要朋友来一起制作")
+bin:Label("需要师傅")
+bin:Label("真的谢谢你能看到这里")
+bin:Label("缝合求你们不要喷我")
+bin:Label("此脚本为作者个人制作")
+bin:Label("我很孤独，需要朋友陪伴")
+
+local creds = window:Tab("公认四大傻逼QQ",'17860099393')
+local credits = creds:section("四个傻逼",true)
+credits:Button("3792988312",function()
+    setclipboard("3792988312")
+end)
+    
+credits:Button("1431046659",function()
+    setclipboard("1431046659")
+end)
+
+credits:Button("3667156330",function()
+    setclipboard("3667156330")
+end)
+
+credits:Button("2454580192",function()
+    setclipboard("2454580192")
+end)
+
+credits:Button("四大傻逼群聊",function()
+    setclipboard("814705174")
+end)
+
+local creds = window:Tab("复制群聊",'17860099393')
+
+local credits = creds:section("关于群聊",true)
+    credits:Button("复制空NN主群",function()
+    setclipboard("263575982")
+end)
+    credits:Button("群二",function()
+    setclipboard("965316109")
+end)
+    credits:Button("新主群",function()
+    setclipboard("965647304")
+end)
+
+local creds = window:Tab("作者制作的其他脚本",'17860099393')
+
+local credits = creds:section("作者制作的其他脚本",true)
+    credits:Button("空脚本1.0.1",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%ACV1.0.1.txt"))()
+end)
+    credits:Button("空脚本1.0.2",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
+end)
+
+credits:Button("空透视",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E9%80%8F%E8%A7%86.lua"))()
+end)
+
+local creds = window:Tab("DOORS👁",'17860099393')
+
+local credits = creds:section("功能",true)
+    credits:Button("穿墙",function()
+    loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+end)
+
+credits:Button("十字架",function()
+    local shadow=game:GetObjects("rbxassetid://11498423088")[1]
+shadow.Parent = game.Players.LocalPlayer.Backpack
+local Players = game:GetService("Players")
+local Plr = Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+local Hum = Char:WaitForChild("Humanoid")
+local RightArm = Char:WaitForChild("RightUpperArm")
+local LeftArm = Char:WaitForChild("LeftUpperArm")
+local RightC1 = RightArm.RightShoulder.C1
+local LeftC1 = LeftArm.LeftShoulder.C1
+        local function setupCrucifix(tool)
+        RightArm.Name = "R_Arm"
+        LeftArm.Name = "L_Arm"
+        
+        RightArm.RightShoulder.C1 = RightC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+        LeftArm.LeftShoulder.C1 = LeftC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+        for _, v in next, Hum:GetPlayingAnimationTracks() do
+            v:Stop()
+        end
+        end
+shadow.Equipped:Connect(function()
+setupCrucifix(shadow)
+game.Players.LocalPlayer:SetAttribute("Hidden", true)
+end)
+end)
+
+credits:Button("全地图发光",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+end)
+
+credits:Button("骷髅钥匙",function()
+   local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack 
+end)
+
+credits:Button("圣光手榴弹",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+end)
+
+credits:Button("剪刀",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+end)
+
+local credits = creds:section("其他脚本",true)
+credits:Button("汉化脚本",function()
+    --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+end)
+
+credits:Button("微山doors",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+end)
+
+local creds = window:Tab("动感星期五",'17860099393')
+
+local credits = creds:section("脚本",true)
+    credits:Button("动感星期五（Auto Click）",function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+end)
+    credits:Button("动感星期五（自动PK）",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+    credits:Button("动感星期五",function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+end)
+
+local creds = window:Tab("rooms &doors",'17860099393')
+
+local credits = creds:section("其余脚本",true)
+    credits:Button("情云脚本，抱歉",function()
+    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+end)
+
+    credits:Button("全地图发光",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4LDKiJ5a"))()
+end)
+
+local creds = window:Tab("枪械射击类",'17860099393')
+local credits = creds:section("枪械",true)
+    credits:Button("锁头",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/6RQGbFqD"))()
+end)
+
+credits:Button("小范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
+end)
+
+credits:Button("中等范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+end)
+
+credits:Button("巨型范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+end)
+
+credits:Button("踏空",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+end)
+
+credits:Button("自瞄",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
+end)
+
+local creds = window:Tab("忍者传奇",'17860099393')
+local credits = creds:section("岛屿",true)
+    credits:Button("出生点",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.665502548217773, 3.4228405952453613, 29.919952392578125)
+end)
+
+credits:Button("星岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(207.2932891845703, 2013.88037109375, 237.36672973632812)
+end)
+
+credits:Button("密岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(171.97178649902344, 4047.380859375, 42.0699577331543)
+end)
+
+credits:Button("天空岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148.83824157714844, 5657.18505859375, 73.5014877319336)
+end)
+
+credits:Button("冰岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(139.28330993652344, 9285.18359375, 77.36406707763672)
+end)
+
+credits:Button("无限岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(149.34817504882812, 13680.037109375, 73.3861312866211)
+end)
+
+credits:Button("沙岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(133.37144470214844, 17686.328125, 72.00334167480469)
+end)
+
+credits:Button("雷岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(143.19349670410156, 24070.021484375, 78.05432891845703)
+end)
+
+credits:Button("远古炼狱岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(141.27163696289062, 28256.294921875, 69.3790283203125)
+end)
+
+credits:Button("暗影岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(132.74267578125, 33206.98046875, 57.495574951171875)
+end)
+
+credits:Button("灵魂岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(137.76148986816406, 39317.5703125, 61.06639862060547)
+end)
+
+credits:Button("奇迹岛",function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(137.76148986816406, 39317.5703125, 61.06639862060547) 
+end)
+
+credits:Button("黄金岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(128.32339477539062, 52607.765625, 56.69411849975586)
+end)
+
+credits:Button("传奇",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(146.35226440429688, 59594.6796875, 77.53300476074219)
+end)
+
+credits:Button("科技传奇岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(137.3321075439453, 66669.1640625, 72.21722412109375)
+end)
+
+credits:Button("超能岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.48077392578125, 70271.15625, 57.02311325073242)
+end)
+
+credits:Button("混沌岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148.58590698242188, 74442.8515625, 69.3177719116211)
+end)
+
+credits:Button("黑鸡岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(136.9700927734375, 79746.984375, 58.54051971435547)
+end)
+
+credits:Button("黑鸡元素岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(141.697265625, 83198.984375, 72.73107147216797)
+end)
+
+credits:Button("和平岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.3157501220703, 87051.0625, 66.78429412841797)
+end)
+
+credits:Button("漩涡岛",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.08216857910156, 91246.0703125, 69.56692504882812)
+end)
+
+local credits = creds:section("功能",true)
+
+credits:Button("35倍金币",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86.2938232421875, 91245.765625, 120.54232788085938)
+	end
+})
+autoswing = false
+function swinging()
+    spawn(
+        function()
+            while autoswing == true do
+                task.wait()
+                game:GetService("Players").LocalPlayer.ninjaEvent:FireServer("swingKatana")
+                if not autoswing then
+                    break
+                end
+            end
+        end
+    )
+end
+autosell = false
+function selling()
+    spawn(
+        function()
+            while autosell == true do
+                task.wait(.01)
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                        game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+                    wait(.1)
+                    game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                        game.Workspace.Part.CFrame
+                    if not autosell then
+                        break
+                    end
+                end
+            end
+        end
+    )
+end
+autosellmax = false
+function maxsell()
+    spawn(
+        function()
+            while autosellmax == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    if game.Players.LocalPlayer.PlayerGui.gameGui.maxNinjitsuMenu.Visible == true then
+                        game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                            game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+                        task.wait()
+                        game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                            game.Workspace.Part.CFrame
+                    end
+                end
+                if not autosellmax then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuyswords = false
+function buyswords()
+    spawn(
+        function()
+            while autobuyswords == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyAllSwords"
+                    local oh2 = {
+                        "Ground",
+                        "Astral Island",
+                        "Space Island",
+                        "Tundra Island",
+                        "Eternal Island",
+                        "Sandstorm",
+                        "Thunderstorm",
+                        "Ancient Inferno Island",
+                        "Midnight Shadow Island",
+                        "Mythical Souls Island",
+                        "Winter Wonder Island"
+                    }
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                    end
+                end
+                if not autobuyswords then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuybelts = false
+function buybelts()
+    spawn(
+        function()
+            while autobuybelts == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyAllBelts"
+                    local oh2 = {
+                        "Ground",
+                        "Astral Island",
+                        "Space Island",
+                        "Tundra Island",
+                        "Eternal Island",
+                        "Sandstorm",
+                        "Thunderstorm",
+                        "Ancient Inferno Island",
+                        "Midnight Shadow Island",
+                        "Mythical Souls Island",
+                        "Winter Wonder Island"
+                    }
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                    end
+                end
+                if not autobuybelts then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuyranks = false
+function buyranks()
+    spawn(
+        function()
+            while autobuyranks == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyRank"
+                    local oh2 = game:GetService("ReplicatedStorage").Ranks.Ground:GetChildren()
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i].Name)
+                    end
+                end
+                if not autobuyranks then
+                    break
+                end
+            end
+    
+end)
+
+credits:Button("宠物",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4593.21337890625, 130.87181091308594, 1430.2239990234375)
+end)
+
+local creds = window:Tab("nico次元时代",'17860099393')
+
+local credits = creds:section("脚本",true)
+credits:Button("机器人1",function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
+end)
+
+credits:Button("刷",function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
+end)
+
+credits:Button("脚本1",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/elonof/nicosbots-script/main/main.lua",true))()
+end)
+
+local creds = window:Tab("俄亥俄州",'17860099393')
+
+local credits = creds:section("脚本",true)
+credits:Button("内鬼",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+end)
+
+credits:Button("打人",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+end)
+
+credits:Button("其他",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1QCwNAXx"))()
+end)
+
+local creds = window:Tab("更新中",'17860099393')
+
+local credits = creds:section("此窗口皆为预留",true)
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
+
+credits:Button("预留",function()
+    
+end)
