@@ -1,5 +1,5 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/hhhjvhui.lua"))()
-local window = library:new("空脚本V1.0.3")
+local window = library:new("空脚本升级版")
 
 local creds = window:Tab("使用脚本必看",'17860099393')
 
