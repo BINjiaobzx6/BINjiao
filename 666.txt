@@ -101,7 +101,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/1mPger1J')))()
-local Window = OrionLib:MakeWindow({IntroText = "🇨🇳空脚本Empty script🇨🇳",Name = "Empty 空脚本V1.0.1", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+local Window = OrionLib:MakeWindow({IntroText = "🇨🇳空脚本Empty script🇨🇳",Name = "Empty 空脚本rooms", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
 
 local Tab =Window:MakeTab({
 	Name = "rooms&doors",
@@ -109,9 +109,11 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
-Name = "怪物提示，如果没有提示请重新打开",
-  Callback = function()
+Tab:AddToggle(
+    {
+        Name = "怪物提示",
+        Default = false,
+        Callback = function(x)
     local objectName = "monster"
 local objectStatus = false
 local StarterGui = game:GetService("StarterGui")
@@ -136,12 +138,12 @@ local function checkObject()
     local object = workspace:FindFirstChild(objectName)
     if object then
         if not objectStatus then
-            notify("空脚本提示", "怪物已刷新，请快躲避", "appear")
+            notify("空脚本提示", "怪物已刷新，请快躲避，小跟班可能没提示", "appear")
             objectStatus = true
         end
     else
         if objectStatus then
-            notify("空脚本提示", "怪物消失，如果怪物来的时候不会出现提示请重新打开次脚本", "disappear")
+            notify("空脚本提示", "怪物消失，a60小跟班可能没有提示", "disappear")
             objectStatus = false
         else
             notify("空脚本提示", "A60小跟班没提示，记得注意", "notExist")
