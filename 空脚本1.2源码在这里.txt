@@ -75,7 +75,6 @@ end)
 
 local creds = window:Tab("通用培根",'17860099393')
 local credits = creds:section("脚本",true)
-
 credits:Button("无限跳",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
 end)
@@ -126,6 +125,7 @@ local credits = creds:section("作者制作的其他脚本",true)
     credits:Button("空脚本1.0.1",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%ACV1.0.1.txt"))()
 end)
+
     credits:Button("空脚本1.0.2",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
 end)
@@ -139,147 +139,6 @@ local creds = window:Tab("DOORS👁",'17860099393')
 local credits = creds:section("功能",true)
     credits:Button("穿墙",function()
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
-end)
-
-credits:Button("自动跳门",function()
-    local AutoSkipCoro = coroutine.create(function()
-        while true do
-            task.wait()
-            pcall(function()
-            if OrionLib.Flags["AutoSkip"].Value == true and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value < 100 then
-                local HasKey = false
-                local LatestRoom = game:GetService("ReplicatedStorage").GameData.LatestRoom.Value
-                local CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom)]:WaitForChild("Door")
-                for i,v in ipairs(CurrentDoor.Parent:GetDescendants()) do
-                    if v.Name == "KeyObtain" then
-                        HasKey = v
-                    end
-                end
-                if HasKey then
-                    game.Players.LocalPlayer.Character:PivotTo(CF(HasKey.Hitbox.Position))
-                    task.wait(0.3)
-                    fireproximityprompt(HasKey.ModulePrompt,0)
-                    game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
-                    task.wait(0.3)
-                    fireproximityprompt(CurrentDoor.Lock.UnlockPrompt,0)
-                end
-                if LatestRoom == 50 then
-                    CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom+1)]:WaitForChild("Door")
-                end
-                game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
-                task.wait(0.3)
-                CurrentDoor.ClientOpen:FireServer()
-            end
-        end)
-        end
-end)
-
-credits:Button("怪物esp",function()
-Flag = "MobToggle" ,
-    Save = true
-})
-
-game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
-    if OrionLib.Flags["InstantToggle"].Value == true then
-        fireproximityprompt(prompt)
-    end
-end)
-
-local old
-old = hookmetamethod(game,"__namecall",newcclosure(function(self,...)
-    local args = {...}
-    local method = getnamecallmethod()
-
-    if tostring(self) == 'Screech' and method == "FireServer" and OrionLib.Flags["ScreechToggle"].Value == true then
-        args[1] = true
-        return old(self,unpack(args))
-    end
-    if tostring(self) == 'ClutchHeartbeat' and method == "FireServer" and OrionLib.Flags["HeartbeatWin"].Value == true then
-        args[2] = true
-        return old(self,unpack(args)).infiniteyield
-    end
-
-    return old(self,...)
-end))
-
-workspace.CurrentCamera.ChildAdded:Connect(function(child)
-    if child.Name == "Screech" and OrionLib.Flags["ScreechToggle"].Value == true then
-        child:Destroy()
-    end
-end)
-
-local NotificationCoroutine = coroutine.create(function()
-    LatestRoom.Changed:Connect(function()
-        if OrionLib.Flags["PredictToggle"].Value == true then
-            local n = ChaseStart.Value - LatestRoom.Value
-            if 0 < n and n < 4 then
-                OrionLib:MakeNotification({
-                    Name = "警告！",
-                    Content = "事件发生在" .. tostring(n) .. "房间。",
-                    Time = 5
-                })
-            end
-        end
-        if OrionLib.Flags["BookToggle"].Value == true then
-            if LatestRoom.Value == 50 then
-                coroutine.resume(BookCoroutine)
-            end
-        end
-        if OrionLib.Flags["FigureToggle"].Value == true then
-            if LatestRoom.Value == 50 then
-                coroutine.resume(EntityCoroutine)
-            end
-        end
-    end)
-    workspace.ChildAdded:Connect(function(inst)
-        if inst.Name == "RushMoving" and OrionLib.Flags["MobToggle"].Value == true then
-            if OrionLib.Flags["AvoidRushToggle"].Value == true then
-                OrionLib:MakeNotification({
-                    Name = "警告！",
-                    Content = "避免Rush。请稍等。",
-                    Time = 5
-                })
-                local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-                local con = game:GetService("RunService").Heartbeat:Connect(function()
-                    game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,20,0))
-                end)
-
-                inst.Destroying:Wait()
-                con:Disconnect()
-
-                game.Players.LocalPlayer.Character:MoveTo(OldPos)
-            else
-                OrionLib:MakeNotification({
-                    Name = "警告!",
-                    Content = "Rush已经繁殖了，藏起来！",
-                    Time = 5
-                })
-            end
-        elseif inst.Name == "AmbushMoving" and OrionLib.Flags["MobToggle"].Value == true then
-            if OrionLib.Flags["AvoidRushToggle"].Value == true then
-                OrionLib:MakeNotification({
-                    Name = "警告!",
-                    Content = "躲避Ambush。请稍等。",
-                    Time = 5
-                })
-                local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-                local con = game:GetService("RunService").Heartbeat:Connect(function()
-                    game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,20,0))
-                end)
-
-                inst.Destroying:Wait()
-                con:Disconnect()
-
-                game.Players.LocalPlayer.Character:MoveTo(OldPos)
-            else
-                OrionLib:MakeNotification({
-                    Name = "警告！",
-                    Content = "Ambush已经繁殖了，藏起来！",
-                    Time = 5
-                })
-            end
-        end
-    end)
 end)
 
 credits:Button("十字架",function()
