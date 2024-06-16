@@ -1,18 +1,19 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/hhhjvhui.lua"))()
-local window = library:new("空脚本升级版")
+local window = library:new("空辅助升级版")
 
 local creds = window:Tab("使用脚本必看",'17860099393')
 
 local bin = creds:section("玩家信息",true)
 
-    bin:Label("用户名:"..game.Players.LocalPlayer.Character.Name)
-    bin:Label("注入器:"..identifyexecutor())
+    bin:Label("你好朋友:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("你的注入器很厉害呀:"..identifyexecutor())
     
     local bin = creds:section("关于",true)
     bin:Label("群2:965316109")
     bin:Label("空新主群:965647304")
-    bin:Label("，作者:EMPTY")
+    bin:Label("作者:EMPTY")
     bin:Label("空作者:永远免费")
+    bin:Label("请前往作者留言观看")
     
 local credits = creds:section("关闭",true)
 
@@ -23,9 +24,11 @@ credits:Toggle("缩小一点点", "", false, function(state)
             game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
         end
     end)
-local creds = window:Tab("使用脚本必看",'17860099393')
+local creds = window:Tab("作者留言",'17860099393')
 
 local bin = creds:section("关于作者",true)
+
+    bin:Label("用户名:"..game.Players.LocalPlayer.Character.Name)
 
     bin:Label("作者需要朋友来一起制作")
     bin:Label("需要师傅")
@@ -33,8 +36,13 @@ local bin = creds:section("关于作者",true)
     bin:Label("缝合求你们不要喷我")
     bin:Label("此脚本为作者个人制作")
     bin:Label("我很孤独，需要朋友陪伴")
+    bin:Label("禁止圈钱")
+    bin:Label("当你看到这条消息就代表你打开了脚本")
+    bin:Label("希望你能加入我们的群聊")
+    bin:Label("空脚本会慢慢更新，一直做下去的")
+    bin:Label("该脚本全部由自己一人缝合")
 
-local creds = window:Tab("公认四大傻逼QQ",'17860099393')
+local creds = window:Tab("傻逼榜",'17860099393')
 local credits = creds:section("四个傻逼",true)
 credits:Button("3792988312",function()
     setclipboard("3792988312")
@@ -52,11 +60,7 @@ credits:Button("2454580192",function()
     setclipboard("2454580192")
 end)
 
-credits:Button("四大傻逼群聊",function()
-    setclipboard("814705174")
-end)
-
-local creds = window:Tab("复制群聊",'17860099393')
+local creds = window:Tab("复制我们的群聊",'17860099393')
 
 local credits = creds:section("关于群聊",true)
     credits:Button("复制空NN主群",function()
@@ -69,7 +73,54 @@ end)
     setclipboard("965647304")
 end)
 
-local creds = window:Tab("作者制作的其他脚本",'17860099393')
+local creds = window:Tab("通用培根",'17860099393')
+local credits = creds:section("脚本",true)
+
+credits:Button("无限跳",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+end)
+
+credits:Button("攀爬",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+credits:Button("画质",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+end)
+
+credits:Button("飞行",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/UVAj0uWu"))()
+end)
+
+credits:Button("电脑键盘",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+credits:Button("踏空",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+end)
+
+credits:Button("甩飞",function()
+    local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {
+end)
+
+credits:Button("人物透视",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+end)
+
+credits:Button("指令",function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+credits:Button("跟随玩家",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+end)
+
+credits:Button("旋转",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+end)
+
+local creds = window:Tab("其他脚本",'17860099393')
 
 local credits = creds:section("作者制作的其他脚本",true)
     credits:Button("空脚本1.0.1",function()
@@ -88,6 +139,147 @@ local creds = window:Tab("DOORS👁",'17860099393')
 local credits = creds:section("功能",true)
     credits:Button("穿墙",function()
     loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+end)
+
+credits:Button("自动跳门",function()
+    local AutoSkipCoro = coroutine.create(function()
+        while true do
+            task.wait()
+            pcall(function()
+            if OrionLib.Flags["AutoSkip"].Value == true and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value < 100 then
+                local HasKey = false
+                local LatestRoom = game:GetService("ReplicatedStorage").GameData.LatestRoom.Value
+                local CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom)]:WaitForChild("Door")
+                for i,v in ipairs(CurrentDoor.Parent:GetDescendants()) do
+                    if v.Name == "KeyObtain" then
+                        HasKey = v
+                    end
+                end
+                if HasKey then
+                    game.Players.LocalPlayer.Character:PivotTo(CF(HasKey.Hitbox.Position))
+                    task.wait(0.3)
+                    fireproximityprompt(HasKey.ModulePrompt,0)
+                    game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
+                    task.wait(0.3)
+                    fireproximityprompt(CurrentDoor.Lock.UnlockPrompt,0)
+                end
+                if LatestRoom == 50 then
+                    CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom+1)]:WaitForChild("Door")
+                end
+                game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
+                task.wait(0.3)
+                CurrentDoor.ClientOpen:FireServer()
+            end
+        end)
+        end
+end)
+
+credits:Button("怪物esp",function()
+Flag = "MobToggle" ,
+    Save = true
+})
+
+game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
+    if OrionLib.Flags["InstantToggle"].Value == true then
+        fireproximityprompt(prompt)
+    end
+end)
+
+local old
+old = hookmetamethod(game,"__namecall",newcclosure(function(self,...)
+    local args = {...}
+    local method = getnamecallmethod()
+
+    if tostring(self) == 'Screech' and method == "FireServer" and OrionLib.Flags["ScreechToggle"].Value == true then
+        args[1] = true
+        return old(self,unpack(args))
+    end
+    if tostring(self) == 'ClutchHeartbeat' and method == "FireServer" and OrionLib.Flags["HeartbeatWin"].Value == true then
+        args[2] = true
+        return old(self,unpack(args)).infiniteyield
+    end
+
+    return old(self,...)
+end))
+
+workspace.CurrentCamera.ChildAdded:Connect(function(child)
+    if child.Name == "Screech" and OrionLib.Flags["ScreechToggle"].Value == true then
+        child:Destroy()
+    end
+end)
+
+local NotificationCoroutine = coroutine.create(function()
+    LatestRoom.Changed:Connect(function()
+        if OrionLib.Flags["PredictToggle"].Value == true then
+            local n = ChaseStart.Value - LatestRoom.Value
+            if 0 < n and n < 4 then
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "事件发生在" .. tostring(n) .. "房间。",
+                    Time = 5
+                })
+            end
+        end
+        if OrionLib.Flags["BookToggle"].Value == true then
+            if LatestRoom.Value == 50 then
+                coroutine.resume(BookCoroutine)
+            end
+        end
+        if OrionLib.Flags["FigureToggle"].Value == true then
+            if LatestRoom.Value == 50 then
+                coroutine.resume(EntityCoroutine)
+            end
+        end
+    end)
+    workspace.ChildAdded:Connect(function(inst)
+        if inst.Name == "RushMoving" and OrionLib.Flags["MobToggle"].Value == true then
+            if OrionLib.Flags["AvoidRushToggle"].Value == true then
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "避免Rush。请稍等。",
+                    Time = 5
+                })
+                local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                local con = game:GetService("RunService").Heartbeat:Connect(function()
+                    game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,20,0))
+                end)
+
+                inst.Destroying:Wait()
+                con:Disconnect()
+
+                game.Players.LocalPlayer.Character:MoveTo(OldPos)
+            else
+                OrionLib:MakeNotification({
+                    Name = "警告!",
+                    Content = "Rush已经繁殖了，藏起来！",
+                    Time = 5
+                })
+            end
+        elseif inst.Name == "AmbushMoving" and OrionLib.Flags["MobToggle"].Value == true then
+            if OrionLib.Flags["AvoidRushToggle"].Value == true then
+                OrionLib:MakeNotification({
+                    Name = "警告!",
+                    Content = "躲避Ambush。请稍等。",
+                    Time = 5
+                })
+                local OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                local con = game:GetService("RunService").Heartbeat:Connect(function()
+                    game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,20,0))
+                end)
+
+                inst.Destroying:Wait()
+                con:Disconnect()
+
+                game.Players.LocalPlayer.Character:MoveTo(OldPos)
+            else
+                OrionLib:MakeNotification({
+                    Name = "警告！",
+                    Content = "Ambush已经繁殖了，藏起来！",
+                    Time = 5
+                })
+            end
+        end
+    end)
 end)
 
 credits:Button("十字架",function()
@@ -192,6 +384,10 @@ credits:Button("自瞄",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
 end)
 
+credits:Button("透视",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+end)
+
 local creds = window:Tab("忍者传奇",'17860099393')
 local credits = creds:section("岛屿",true)
     credits:Button("出生点",function()
@@ -285,16 +481,8 @@ end)
 local creds = window:Tab("nico次元时代",'17860099393')
 
 local credits = creds:section("脚本",true)
-credits:Button("机器人1",function()
+credits:Button("暂时没有，推荐请加群",function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
-end)
-
-credits:Button("刷",function()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
-end)
-
-credits:Button("脚本1",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/elonof/nicosbots-script/main/main.lua",true))()
 end)
 
 local creds = window:Tab("俄亥俄州",'17860099393')
@@ -310,4 +498,66 @@ end)
 
 credits:Button("其他",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/1QCwNAXx"))()
+end)
+
+credits:Button("云脚本俄亥俄州",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/%E6%B8%B8%E6%88%8F/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%B7%9E.lua",true))()
+end)
+
+credits:Button("俄亥俄州脚本",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+end)
+
+credits:Button("俄亥俄州推荐",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\115\99\114\105\112\116\115\46\118\105\115\117\114\117\115\46\100\101\118\47\111\104\105\111\47\115\111\117\114\99\101"))()
+end)
+
+credits:Button("客剑俄亥",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jiankeQWQ/jiankeV3/main/ehaiezhou"))()
+end)
+
+local creds = window:Tab("rooms",'17860099393')
+local credits = creds:section("rooms",true)
+
+credits:Button("情云",function()
+    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,46,108,117,97,34,41,41,40,41})end)()))()
+end)
+
+credits:Button("doors自动A1000",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/wjNJccfz'))()
+end)
+
+credits:Button("软糖手电筒",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gummy%20Flashlight.lua"))()
+end)
+
+local creds = window:Tab("其他脚本",'17860099393')
+
+local credits = creds:section("脚本",true)
+credits:Button("NN中心",function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\115\100\104\100\98\120\117\98\47\110\110\115\105\101\106\119\47\109\97\105\110\47\71\85\73\89\68\83\83\46\108\117\97\34\41\41\40\41\10")()
+end)
+
+credits:Button("皇脚本",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
+end)
+
+credits:Button("忍脚本",function()
+    loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,90,77,115,67,56,114,104,114})end)())))();
+end)
+
+credits:Button("脚本中心",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+end)
+
+credits:Button("导管中心",function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
+end)
+
+credits:Button("云脚本破解版",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/longshu886/longscript/main/ALpojie"))()
+end)
+
+credits:Button("情云脚本",function()
+    loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,46,108,117,97,34,41,41,40,41})end)()))()
 end)
