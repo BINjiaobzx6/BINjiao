@@ -28,8 +28,6 @@ local creds = window:Tab("作者留言",'17860099393')
 
 local bin = creds:section("关于作者",true)
 
-    bin:Label("用户名:"..game.Players.LocalPlayer.Character.Name)
-
     bin:Label("作者需要朋友来一起制作")
     bin:Label("需要师傅")
     bin:Label("真的谢谢你能看到这里")
@@ -335,13 +333,6 @@ end)
 
 credits:Button("宠物",function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4593.21337890625, 130.87181091308594, 1430.2239990234375)
-end)
-
-local creds = window:Tab("nico次元时代",'17860099393')
-
-local credits = creds:section("脚本",true)
-credits:Button("暂时没有，推荐请加群",function()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
 end)
 
 local creds = window:Tab("俄亥俄州",'17860099393')
