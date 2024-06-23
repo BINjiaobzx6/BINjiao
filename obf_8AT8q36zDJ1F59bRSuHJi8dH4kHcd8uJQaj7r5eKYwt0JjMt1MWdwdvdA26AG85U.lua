@@ -12,23 +12,6 @@ local bin = creds:section("玩家信息",true)
     bin:Label("空新主群:965647304")
     bin:Label("作者:EMPTY")
     bin:Label("空作者:永远免费")
-    
-local credits = creds:section("关闭",true)
-
-bin:Label("，作者:E空Y")
-
-local creds = window:Tab("复制群聊",'17860099393')
-
-local credits = creds:section("关于群聊",true)
-    credits:Button("复制空NN主群",function()
-    setclipboard("263575982")
-end)
-    credits:Button("群二",function()
-    setclipboard("965316109")
-end)
-    credits:Button("新主群",function()
-    setclipboard("965647304")
-end)
 
 local creds = window:Tab("通用脚本",'17860099393')
 
@@ -138,10 +121,6 @@ end)
 
 credits:Button("修复版",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/obf_W9sUzSqwIqu68V8vk5DofNGe8jyjCuSVvo0X4IBRXZRQYMAp2W2md5Suhz6Jyq4E.lua"))()
-end)
-
-credits:Button("空脚本透视《推荐》",function()
-    loadstring(game:HttpGet("getgenv().LS="空脚本透视" loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/obf_Qn71zA9MGJGQ3uNZRe134PII9F6yKt2wPWT7Cxgh08FKWgTJBhf3Xi5d8985c7tL.lua"))()"))()
 end)
 
 local creds = window:Tab("DOORS👁",'17860099393')
@@ -706,4 +685,3 @@ credits:Toggle("笔刷2", "", false, function(state)
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(256.5617980957031, 2.924128770828247, 38.21192932128906)
         end
     end)
-    
