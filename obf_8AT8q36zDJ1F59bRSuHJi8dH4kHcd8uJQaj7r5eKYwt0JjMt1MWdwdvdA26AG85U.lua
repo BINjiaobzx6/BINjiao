@@ -1,12 +1,709 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.5) ~  Much Love, Ferib 
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/hhhjvhui.lua"))()
+local window = library:new("欢迎使用空中心")
 
-]]--
+local creds = window:Tab("使用脚本必看",'17860099393')
 
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v81=0;local v82;while true do if (v81==0) then v82=v2(v0(v30,16));if v19 then local v97=v5(v82,v19);v19=nil;return v97;else return v82;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v83=(v31/(((1 + 4) -3)^(v32-(878 -(282 + 595)))))%((5 -3)^(((v33-(1 -0)) -(v32-(2 -1))) + (620 -(555 + 64)))) ;return v83-(v83%((2569 -(1523 + 114)) -(857 + 74))) ;else local v84=(570 -(367 + 201))^(v32-1) ;return (((v31%(v84 + v84))>=v84) and (928 -(214 + 641 + 72))) or (0 + 0) ;end end local function v21() local v34=0 -(0 -0) ;local v35;while true do if (v34==1) then return v35;end if (v34==0) then v35=v1(v16,v18,v18);v18=v18 + (1066 -(68 + 997)) ;v34=1271 -(226 + 1044) ;end end end local function v22() local v36,v37=v1(v16,v18,v18 + (119 -(32 + 85)) );v18=v18 + 2 + 0 ;return (v37 * (57 + 199)) + v36 ;end local function v23() local v38=957 -(892 + 65) ;local v39;local v40;local v41;local v42;while true do if (v38==(181 -(67 + 113))) then return (v42 * (40022563 -(16920032 + 6325315))) + (v41 * (121138 -55602)) + (v40 * (469 -213)) + v39 ;end if (v38==((997 -(915 + 82)) -(0 -0))) then v39,v40,v41,v42=v1(v16,v18,v18 + (955 -(802 + 150)) );v18=v18 + (10 -6) ;v38=351 -(87 + 263) ;end end end local function v24() local v43=v23();local v44=v23();local v45=1 + 0 ;local v46=(v20(v44,1 -0 ,1207 -(1069 + 118) ) * ((4 -2)^(1170 -(116 + (2769 -(760 + 987)))))) + v43 ;local v47=v20(v44,45 -24 ,19 + 12 );local v48=((v20(v44,6 + 26 )==1) and  -(1 -0)) or (860 -(814 + 45)) ;if (v47==(0 -0)) then if (v46==(0 + 0)) then return v48 * (0 + 0) ;else local v88=791 -(368 + 423) ;while true do if (v88==(0 -0)) then v47=19 -(10 + (1921 -(1789 + 124))) ;v45=(766 -(745 + 21)) -0 ;break;end end end elseif (v47==(2489 -(416 + 26))) then return ((v46==(0 + 0)) and (v48 * ((3 -2)/(0 + 0)))) or (v48 * NaN) ;end return v8(v48,v47-(1809 -786) ) * (v45 + (v46/((440 -(145 + 293))^(482 -(44 + 386))))) ;end local function v25(v49) local v50=0 -0 ;local v51;local v52;while true do if (v50==(3 -2)) then v51=v3(v16,v18,(v18 + v49) -(1 + 0) );v18=v18 + v49 ;v50=2 + 0 ;end if (v50==((2888 -1833) -(87 + 968))) then v51=nil;if  not v49 then v49=v23();if (v49==(0 -(1817 -(1703 + 114)))) then return "";end end v50=1;end if (v50==((704 -(376 + 325)) + 0)) then return v6(v52);end if (v50==2) then v52={};for v89=2 -(1 -0) , #v51 do v52[v89]=v2(v1(v3(v51,v89,v89)));end v50=1416 -(447 + 966) ;end end end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v53=0;local v54;local v55;local v56;local v57;local v58;local v59;while true do local v66=0 + 0 ;while true do if (v66~=(1824 -(1195 + 629))) then else if (v53~=(0 -0)) then else local v95=241 -(187 + 54) ;while true do if (1==v95) then v56={};v57={v54,v55,nil,v56};v95=2 + 0 ;end if (v95~=(2 + 0)) then else v53=1 -0 ;break;end if (v95==(1427 -(41 + 1386))) then v54={};v55={};v95=104 -(17 + 86) ;end end end if (v53==(2 -0)) then for v98=1 + 0 ,v23() do local v99=0 + 0 ;local v100;local v101;while true do if (v99==0) then local v109=0 -0 ;local v110;while true do if (v109==(1636 -(1373 + 263))) then v110=0;while true do if (v110~=(1000 -(451 + 549))) then else local v195=0 + 0 ;while true do if (v195==0) then v100=0 -0 ;v101=nil;v195=1 -0 ;end if (v195==(1 + 0)) then v110=1;break;end end end if ((1 -0)~=v110) then else v99=1;break;end end break;end end end if (v99==(1 -0)) then while true do if (v100~=(1384 -(746 + 638))) then else v101=v21();if (v20(v101,1,1 + 0 )==(0 -0)) then local v177=341 -(218 + 123) ;local v178;local v179;local v180;while true do if (v177==(1258 -(1043 + 214))) then local v201=1581 -(1535 + 46) ;while true do if ((1 + 0)==v201) then v177=1 + 1 ;break;end if (v201~=(1212 -(323 + 889))) then else v180={v22(),v22(),nil,nil};if (v178==0) then local v213=0 -0 ;local v214;while true do if (v213==(1467 -(899 + 568))) then v214=0 + 0 ;while true do if (v214==(0 -0)) then v180[416 -(15 + 398) ]=v22();v180[4]=v22();break;end end break;end end elseif (v178==(983 -(18 + 964))) then v180[606 -(268 + 335) ]=v23();elseif (v178==(292 -(60 + 230))) then v180[3]=v23() -((574 -(426 + 146))^(11 + 5)) ;elseif (v178==(1 + 2)) then local v219=1456 -(282 + 1174) ;while true do if (v219==0) then v180[3]=v23() -(2^(13 + 3)) ;v180[4]=v22();break;end end end v201=812 -(569 + 242) ;end end end if (v177~=(8 -5)) then else if (v20(v179,1 + 2 ,1027 -(706 + 318) )==(1 -0)) then v180[4]=v59[v180[1255 -(721 + 530) ]];end v54[v98]=v180;break;end if (v177==(0 + 0)) then local v203=0 + 0 ;local v204;while true do if (v203==0) then v204=0;while true do if (v204==1) then v177=1;break;end if (v204~=(1271 -(945 + 326))) then else v178=v20(v101,4 -2 ,3 + 0 );v179=v20(v101,4,6);v204=701 -(271 + 429) ;end end break;end end end if (v177==(2 + 0)) then if (v20(v179,1552 -(1126 + 425) ,1501 -(1408 + 92) )==(1087 -(461 + 625))) then v180[1290 -(993 + 295) ]=v59[v180[2]];end if (v20(v179,407 -(118 + 287) ,2)~=(1 + 0)) then else v180[1174 -(418 + 753) ]=v59[v180[2 + 1 ]];end v177=1 + 2 ;end end end break;end end break;end end end for v102=1,v23() do v55[v102-(1 + 0) ]=v28();end return v57;end v66=1122 -(118 + 1003) ;end if (v66==(2 -1)) then if (v53==(1 + 0)) then v58=v23();v59={};for v104=4 -3 ,v58 do local v105=0;local v106;local v107;local v108;while true do if (v105==(530 -(406 + 123))) then v108=nil;while true do if (v106~=1) then else if (v107==(1770 -(1749 + 20))) then v108=v21()~=0 ;elseif (v107==(1 + 1)) then v108=v24();elseif (v107~=3) then else v108=v25();end v59[v104]=v108;break;end if (v106==(0 + 0)) then local v163=977 -(553 + 424) ;local v164;while true do if (v163==(1322 -(1249 + 73))) then v164=0 + 0 ;while true do if (v164==(1 + 0)) then v106=1;break;end if (v164==(0 + 0)) then v107=v21();v108=nil;v164=1;end end break;end end end end break;end if ((0 + 0)~=v105) then else local v111=0 + 0 ;local v112;while true do if (0~=v111) then else v112=1145 -(466 + 679) ;while true do if (v112==(2 -1)) then v105=1;break;end if (v112==(0 -0)) then v106=0;v107=nil;v112=1901 -(106 + 1794) ;end end break;end end end end end v57[6 -3 ]=v21();v53=1 + 1 ;end break;end end end end local function v29(v60,v61,v62) local v63=v60[1];local v64=v60[2];local v65=v60[3];return function(...) local v67=v63;local v68=v64;local v69=v65;local v70=v27;local v71=1;local v72= -1;local v73={};local v74={...};local v75=v12("#",...) -1 ;local v76={};local v77={};for v85=0,v75 do if (v85>=v69) then v73[v85-v69 ]=v74[v85 + 1 ];else v77[v85]=v74[v85 + 1 ];end end local v78=(v75-v69) + 1 ;local v79;local v80;while true do v79=v67[v71];v80=v79[1];if (v80<=16) then if (v80<=7) then if (v80<=3) then if (v80<=1) then if (v80==0) then v77[v79[2]]=v62[v79[3]];else local v115=v79[2];local v116=v77[v79[3]];v77[v115 + 1 ]=v116;v77[v115]=v116[v79[4]];end elseif (v80==2) then v77[v79[2]][v79[3]]=v79[4];else v77[v79[2]]={};end elseif (v80<=5) then if (v80==4) then if (v77[v79[2]]==v79[4]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v79[2]==v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80==6) then v71=v79[3];else v77[v79[2]][v79[3]]=v79[4];end elseif (v80<=11) then if (v80<=9) then if (v80>8) then v77[v79[2]]=v77[v79[3]];else do return;end end elseif (v80==10) then local v128=0;local v129;local v130;local v131;local v132;while true do if (v128==0) then v129=v79[2];v130,v131=v70(v77[v129](v13(v77,v129 + 1 ,v79[3])));v128=1;end if (v128==2) then for v196=v129,v72 do local v197=0;while true do if (v197==0) then v132=v132 + 1 ;v77[v196]=v130[v132];break;end end end break;end if (v128==1) then v72=(v131 + v129) -1 ;v132=0;v128=2;end end else v77[v79[2]]();end elseif (v80<=13) then if (v80==12) then local v133=0;local v134;while true do if (v133==0) then v134=v79[2];v77[v134]=v77[v134]();break;end end else for v165=v79[2],v79[3] do v77[v165]=nil;end end elseif (v80<=14) then v77[v79[2]]=v79[3];elseif (v80>15) then v77[v79[2]]={};else local v172=v79[2];v77[v172](v77[v172 + 1 ]);end elseif (v80<=24) then if (v80<=20) then if (v80<=18) then if (v80>17) then local v137=0;local v138;local v139;local v140;local v141;while true do if (v137==1) then v72=(v140 + v138) -1 ;v141=0;v137=2;end if (0==v137) then v138=v79[2];v139,v140=v70(v77[v138](v13(v77,v138 + 1 ,v79[3])));v137=1;end if (v137==2) then for v198=v138,v72 do v141=v141 + 1 ;v77[v198]=v139[v141];end break;end end elseif (v79[2]==v77[v79[4]]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80>19) then v77[v79[2]]=v77[v79[3]][v79[4]];else v77[v79[2]]=v79[3];end elseif (v80<=22) then if (v80>21) then local v146=0;local v147;local v148;while true do if (v146==0) then v147=v79[2];v148=v77[v79[3]];v146=1;end if (v146==1) then v77[v147 + 1 ]=v148;v77[v147]=v148[v79[4]];break;end end else for v167=v79[2],v79[3] do v77[v167]=nil;end end elseif (v80==23) then local v149=0;local v150;while true do if (v149==0) then v150=v79[2];v77[v150]=v77[v150](v13(v77,v150 + 1 ,v72));break;end end else local v151=0;local v152;while true do if (0==v151) then v152=v79[2];v77[v152](v77[v152 + 1 ]);break;end end end elseif (v80<=28) then if (v80<=26) then if (v80>25) then local v153=v79[2];v77[v153]=v77[v153]();else local v155=0;local v156;while true do if (v155==0) then v156=v79[2];v77[v156]=v77[v156](v13(v77,v156 + 1 ,v72));break;end end end elseif (v80==27) then v77[v79[2]]=v62[v79[3]];else v71=v79[3];end elseif (v80<=30) then if (v80==29) then v77[v79[2]]=v77[v79[3]][v79[4]];elseif (v77[v79[2]]==v79[4]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=31) then do return;end elseif (v80==32) then v77[v79[2]]=v77[v79[3]];else v77[v79[2]]();end v71=v71 + 1 ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!183O00028O00026O00F03F026O000840030B3O004465736372697074696F6E031E3O00E7A9BAE8849AE69CACE4BD9CE88085454D5054593133343230383734353403083O004475726174696F6E03073O0067657467656E7603023O004C53030F3O00E7A9BAE8849AE69CACE69C80E696B0030A3O006C6F6164737472696E6703043O0067616D6503073O00482O747047657403833O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F42494E6A69616F627A78362F42494E6A69616F2F6D61696E2F6F62665F5933462O314B6D314C7062716253526C694437474378387636304C7277376E39455233614478585157334476305364304B38622O3733304F67333731425838362E6C7561031B3O00E4B88BE6ACA1E69BB4E696B0E9A284E8AEA136E69C883238E697A503053O005469746C65030C3O00E69BB4E696B0E697B6E997B4027O0040031E3O00E7A9BAE4B8ADE5BF83E69C80E696B0E78988E6ADA3E59CA8E590AFE58AA8030F3O00E7A9BAE4B8ADE5BF83E68F90E7A4BA03043O0077616974034E3O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F4B696E6C65692F44796E692O73696D6F2F6D61696E2F536372697074732F416B616C694E6F7469662E6C756103063O004E6F7469667903453O00E7A9BAE4B8ADE5BF83E58D8AE7BC9DE59088E58D8AE58A9FE883BDEFBC8CE6B0B8E4B985E5858DE8B4B9EFBC8CE794B1E7A9BAE4BD9CE88085E4B8AAE42OBAE588B6E4BD9C03063O00E4BB8BE7BB8D00683O00120E3O00014O0015000100033O000E050002006100013O0004063O006100012O0015000300033O00261E00010017000100030004063O001700012O0020000400034O001000053O00020030020005000400050030020005000600032O000F00040002000100122O000400074O000C00040001000200300200040008000900122O0004000A3O00122O0005000B3O00201600050005000C00120E0007000D4O000A000500074O001900043O00022O000B0004000100010004063O0067000100261E00010031000100020004063O0031000100120E000400013O00261E00040024000100020004063O002400012O0020000500034O001000063O000300300200060004000E0030020006000F00100030020006000600032O000F00050002000100120E000100113O0004063O0031000100261E0004001A000100010004063O001A00012O0020000500034O001000063O00030030020006000400120030020006000F00130030020006000600032O000F00050002000100122O000500143O00120E000600024O000F00050002000100120E000400023O0004063O001A000100261E00010048000100010004063O0048000100120E000400013O00261E0004003B000100020004063O003B000100122O000500143O00120E000600024O000F00050002000100120E000100023O0004063O0048000100261E00040034000100010004063O0034000100122O0005000A3O00122O0006000B3O00201600060006000C00120E000800154O000A000600084O001900053O00022O000C0005000100022O0020000200053O00201D00030002001600120E000400023O0004063O0034000100261E00010005000100110004063O0005000100120E000400013O00261E00040057000100010004063O0057000100122O000500143O00120E000600024O000F0005000200012O0020000500034O001000063O00030030020006000400170030020006000F00180030020006000600032O000F00050002000100120E000400023O00261E0004004B000100020004063O004B000100122O000500143O00120E000600024O000F00050002000100120E000100033O0004063O000500010004063O004B00010004063O000500010004063O0067000100261E3O0002000100010004063O0002000100120E000100014O0015000200023O00120E3O00023O0004063O000200012O00083O00017O00",v9(),...);
+local bin = creds:section("玩家信息",true)
+
+    bin:Label("用户名:"..game.Players.LocalPlayer.Character.Name)
+    bin:Label("注入器:"..identifyexecutor())
+    
+    local bin = creds:section("空群NN中心:263575982",true)
+    bin:Label("空新主群:965647304")
+    bin:Label("作者:EMPTY")
+    bin:Label("空作者:永远免费")
+    
+local credits = creds:section("关闭",true)
+
+bin:Label("，作者:E空Y")
+
+local creds = window:Tab("复制群聊",'17860099393')
+
+local credits = creds:section("关于群聊",true)
+    credits:Button("复制空NN主群",function()
+    setclipboard("263575982")
+end)
+    credits:Button("群二",function()
+    setclipboard("965316109")
+end)
+    credits:Button("新主群",function()
+    setclipboard("965647304")
+end)
+
+local creds = window:Tab("通用脚本",'17860099393')
+
+local credits = creds:section("功能",true)
+credits:Toggle("画质", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+        else
+            loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+        end
+    end)
+
+credits:Toggle("反外挂提升", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC%E5%8D%87%E7%BA%A7%E7%89%88V1.3.txt"))()
+        else
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC%E5%8D%87%E7%BA%A7%E7%89%88V1.3.txt"))()   
+        end
+    end)
+
+credits:Toggle("穿墙", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+        else
+            loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+        end
+    end)
+
+credits:Toggle("全地图高亮", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%89%80%E4%BB%A5%E4%B8%9C%E8%A5%BF.txt"))()
+        else
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%89%80%E4%BB%A5%E4%B8%9C%E8%A5%BF.txt"))()
+        end
+    end)
+
+credits:Toggle("小范围推荐", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
+        else
+       loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()     
+        end
+    end)
+    
+credits:Toggle("中等范围不好用", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+        else
+            loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+        end
+    end)
+
+    credits:Toggle("超大范围不推荐", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+        else
+            loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+        end
+    end)
+    
+
+credits:Toggle("无限跳跃", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+        else
+            loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+        end
+    end)
+
+credits:Toggle("踏空", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+        else
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+        end
+    end)
+
+credits:Toggle("飞行v3", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/UVAj0uWu"))()
+        else
+            loadstring(game:HttpGet("https://pastebin.com/raw/UVAj0uWu"))()
+        end
+    end)
+
+local creds = window:Tab("作者制作的其他脚本",'17860099393')
+
+local bin = creds:section("之前自己做的，评价不知道",true) 
+
+local credits = creds:section("作者制作的其他脚本",true)
+    credits:Button("空脚本1.0.1",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%ACV1.0.1.txt"))()
+end)
+    credits:Button("空脚本1.0.2",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
+end)
+
+local bin = creds:section("作者empty",true)
+
+bin:Label("空作者:永远免费")
+bin:Label("修复版我也一起加进去了")
+bin:Label("半缝免费，不要喷")
+
+credits:Button("空透视",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E9%80%8F%E8%A7%86.lua"))()
+end)
+
+credits:Button("修复版",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/obf_W9sUzSqwIqu68V8vk5DofNGe8jyjCuSVvo0X4IBRXZRQYMAp2W2md5Suhz6Jyq4E.lua"))()
+end)
+
+credits:Button("空脚本透视《推荐》",function()
+    loadstring(game:HttpGet("getgenv().LS="空脚本透视" loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/obf_Qn71zA9MGJGQ3uNZRe134PII9F6yKt2wPWT7Cxgh08FKWgTJBhf3Xi5d8985c7tL.lua"))()"))()
+end)
+
+local creds = window:Tab("DOORS👁",'17860099393')
+
+local credits = creds:section("道具类",true)
+    credits:Toggle("穿墙", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+        else
+       loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
+        end
+    end)
+
+credits:Toggle("十字架", "", false, function(state)
+        if state then
+        local shadow=game:GetObjects("rbxassetid://11498423088")[1]
+shadow.Parent = game.Players.LocalPlayer.Backpack
+local Players = game:GetService("Players")
+local Plr = Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+local Hum = Char:WaitForChild("Humanoid")
+local RightArm = Char:WaitForChild("RightUpperArm")
+local LeftArm = Char:WaitForChild("LeftUpperArm")
+local RightC1 = RightArm.RightShoulder.C1
+local LeftC1 = LeftArm.LeftShoulder.C1
+        local function setupCrucifix(tool)
+        RightArm.Name = "R_Arm"
+        LeftArm.Name = "L_Arm"
+        
+        RightArm.RightShoulder.C1 = RightC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+        LeftArm.LeftShoulder.C1 = LeftC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+        for _, v in next, Hum:GetPlayingAnimationTracks() do
+            v:Stop()
+        end
+        end
+shadow.Equipped:Connect(function()
+setupCrucifix(shadow)
+game.Players.LocalPlayer:SetAttribute("Hidden", true)
+end)
+        else
+            local shadow=game:GetObjects("rbxassetid://11498423088")[1]
+shadow.Parent = game.Players.LocalPlayer.Backpack
+local Players = game:GetService("Players")
+local Plr = Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+local Hum = Char:WaitForChild("Humanoid")
+local RightArm = Char:WaitForChild("RightUpperArm")
+local LeftArm = Char:WaitForChild("LeftUpperArm")
+local RightC1 = RightArm.RightShoulder.C1
+local LeftC1 = LeftArm.LeftShoulder.C1
+        local function setupCrucifix(tool)
+        RightArm.Name = "R_Arm"
+        LeftArm.Name = "L_Arm"
+        
+        RightArm.RightShoulder.C1 = RightC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+        LeftArm.LeftShoulder.C1 = LeftC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+        for _, v in next, Hum:GetPlayingAnimationTracks() do
+            v:Stop()
+        end
+        end
+shadow.Equipped:Connect(function()
+setupCrucifix(shadow)
+game.Players.LocalPlayer:SetAttribute("Hidden", true)
+end)
+        end
+    end)
+
+credits:Toggle("全地图高亮", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%89%80%E4%BB%A5%E4%B8%9C%E8%A5%BF.txt"))()
+        else
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%89%80%E4%BB%A5%E4%B8%9C%E8%A5%BF.txt"))()
+        end
+    end)
+
+credits:Toggle("骷髅钥匙", "", false, function(state)
+        if state then
+        local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
+        else
+       local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end)
+
+credits:Toggle("圣光手榴弹", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+        else
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+        end
+    end)
+
+credits:Toggle("剪刀", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+        else
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+        end
+    end)
+
+local bin = creds:section("作者留言",true)
+
+bin:Label("建议只点击一下")
+
+local credits = creds:section("其他脚本",true)
+credits:Toggle("汉化", "", false, function(state)
+        if state then
+        --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+        else
+       --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+        end
+    end)
+
+credits:Toggle("NBDOORS卡密NB", "", false, function(state)
+        if state then
+      loadstring(game:HttpGet("https://github.com/DocYogurt/DOORS/raw/main/Loader.lua"))()  
+        else
+    loadstring(game:HttpGet("https://github.com/DocYogurt/DOORS/raw/main/Loader.lua"))()        
+        end
+    end)
+
+credits:Toggle("MSHUB", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+        else
+       loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+        end
+    end)
+
+local bin = creds:section("作者留言",true)
+
+bin:Label("指令不知道好不好用，没试过")
+
+credits:Toggle("指令", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+        else
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+        end
+    end)
+
+credits:Toggle("微山doors", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+        else
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+        end
+    end)
+
+local creds = window:Tab("动感星期五",'17860099393')
+
+local credits = creds:section("脚本",true)
+    credits:Toggle("动感星期五1", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+        else
+       loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+        end
+    end)
+    
+credits:Toggle("动感星期五2", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+        else
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+        end
+    end)
+
+credits:Toggle("推荐使用这个", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+        else
+       loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+        end
+    end)
+
+local creds = window:Tab("rooms &doors",'17860099393')
+
+local credits = creds:section("其余脚本",true)
+    credits:Toggle("情云脚本", "", false, function(state)
+        if state then
+        loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+        else
+       loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+        end
+    end)
+
+credits:Toggle("全地图高亮", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%89%80%E4%BB%A5%E4%B8%9C%E8%A5%BF.txt"))()
+        else
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E6%89%80%E4%BB%A5%E4%B8%9C%E8%A5%BF.txt"))()
+        end
+    end)
+    
+creds = window:Tab("其他脚本",'17860099393')
+
+local credits = creds:section("脚本",true)
+    credits:Toggle("导管中心", "", false, function(state)
+        if state then
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
+        else
+           loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")() 
+        end
+    end)
+   
+    credits:Toggle("皇脚本", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
+        else
+       loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
+        end
+    end)
+      
+ credits:Toggle("脚本中心", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+        else
+       loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+        end
+    end)     
+      
+creds = window:Tab("自然灾害",'17860099393')
+
+local credits = creds:section("自制",true)
+credits:Toggle("回到出生点", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-248.8695831298828, 179.36607360839844, 338.4495544433594)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-248.8695831298828, 179.36607360839844, 338.4495544433594)
+        end
+    end)
+
+local credits = creds:section("脚本非自制",true)
+
+credits:Toggle("自然灾害高级版", "", false, function(state)
+        if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()--Made By 1kWoof#0143
+        else
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()--Made By 1kWoof#0143
+        end
+    end)
+
+creds = window:Tab("鱿鱼游戏",'17860099393')
+
+local credits = creds:section("自制",true)
+credits:Toggle("快速到达开始的地方", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.388307571411133, 3.099999189376831, -107.24565887451172)
+        else
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.388307571411133, 3.099999189376831, -107.24565887451172)
+        end
+    end)
+
+local bin = creds:section("作者留言，全是自制一个一个通关搞的",true)
+
+bin:Label("全是自制，注意有使用限制，游戏房间未刷新请勿使用")
+
+credits:Toggle("木头人到达终点", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-131.06849670410156, 6.099994659423828, -628.919677734375)
+        else
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-131.06849670410156, 6.099994659423828, -628.919677734375)
+        end
+    end)
+
+local credits = creds:section("游戏限制，只允许在传木棍使用",true)
+
+credits:Toggle("安全位置1", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.447216033935547, -184.45005798339844, 836.5003051757812)
+        else
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.447216033935547, -184.45005798339844, 836.5003051757812)
+        end
+    end)
+    
+credits:Toggle("安全位置2", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(87.66096496582031, -180.80015563964844, 962.880615234375)
+        else
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(87.66096496582031, -180.80015563964844, 962.880615234375)
+        end
+    end)
+
+local credits = creds:section("游戏限制，只允许在黑灯打人的地方使用",true)
+
+credits:Toggle("安全位置", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-101.07105255126953, -70.64993286132812, -395.3476257324219)
+        else
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-101.07105255126953, -70.64993286132812, -395.3476257324219)
+        end
+    end) 
+
+local credits = creds:section("传送",true)
+
+credits:Toggle("传送到拔河", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(23.213382720947266, -157.85006713867188, -513.2476196289062)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(23.213382720947266, -157.85006713867188, -513.2476196289062)
+        end
+    end)
+
+credits:Toggle("传蛋安全区", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2513.013916015625, 75.27884674072266, 3979.76318359375)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2513.013916015625, 75.27884674072266, 3979.76318359375)
+        end
+    end)
+
+credits:Toggle("石头剪刀布", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11108.1748046875, 14.22500991821289, 4119.64990234375)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11108.1748046875, 14.22500991821289, 4119.64990234375)
+        end
+    end)
+
+credits:Toggle("玻璃桥", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-333.833251953125, -125.47501373291016, -277.9178771972656)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-333.833251953125, -125.47501373291016, -277.9178771972656)
+        end
+    end)
+
+local credits = creds:section("游戏限制，水梯",true)
+
+credits:Toggle("上楼梯的最高层", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(102.51017761230469, -73.91390228271484, -50.787132263183594)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(102.51017761230469, -73.91390228271484, -50.787132263183594)
+        end
+    end)
+
+local credits = creds:section("传送",true)
+
+credits:Toggle("抠糖饼", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.886051177978516, -116.39778900146484, -195.81053161621094)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.886051177978516, -116.39778900146484, -195.81053161621094)
+        end
+    end)
+
+creds = window:Tab("Color or die",'17860099393')
+
+local credits = creds:section("笔刷全自制",true)
+credits:Toggle("笔刷1", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(108.3765869140625, 2.8261330127716064, -56.11078643798828)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(108.3765869140625, 2.8261330127716064, -56.11078643798828)
+        end
+    end)
+
+credits:Toggle("笔刷2", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(176.77020263671875, 2.8261330127716064, -122.37640380859375)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(176.77020263671875, 2.8261330127716064, -122.37640380859375)
+        end
+    end)
+    
+    credits:Toggle("笔刷3", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106.70597839355469, 2.8261330127716064, 77.07504272460938)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106.70597839355469, 2.8261330127716064, 77.07504272460938)
+        end
+    end)
+    
+    credits:Toggle("笔刷4", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(109.28363037109375, 2.8261330127716064, -6.814320087432861)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(109.28363037109375, 2.8261330127716064, -6.814320087432861)
+        end
+    end)
+    
+    credits:Toggle("笔刷5", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216.3707733154297, 2.8261332511901855, 75.98402404785156)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216.3707733154297, 2.8261332511901855, 75.98402404785156)
+        end
+    end)
+    
+    credits:Toggle("笔刷6", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(710.4590454101562, 151.68980407714844, 378.8439636230469)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(710.4590454101562, 151.68980407714844, 378.8439636230469)
+        end
+    end)
+    
+    credits:Toggle("笔刷7", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(850.8873291015625, 42.06087112426758, -74.47248077392578)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(850.8873291015625, 42.06087112426758, -74.47248077392578)
+        end
+    end)
+    
+    credits:Toggle("笔刷8", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(837.8712768554688, 69.13433074951172, -594.424560546875)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(837.8712768554688, 69.13433074951172, -594.424560546875)
+        end
+    end)
+    
+    credits:Toggle("笔刷9", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(310.772705078125, 27.880992889404297, -128.11724853515625)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(310.772705078125, 27.880992889404297, -128.11724853515625)
+        end
+    end)
+    
+    local credits = creds:section("我只能找到这些笔刷了",true)
+    
+    local credits = creds:section("隐藏房间",true)
+    
+    credits:Toggle("隐藏房间1", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11.780367851257324, 2.8261330127716064, 47.119266510009766)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11.780367851257324, 2.8261330127716064, 47.119266510009766)
+        end
+    end)
+    
+    credits:Toggle("隐藏房间2", "", false, function(state)
+        if state then
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(45.382774353027344, 27.826128005981445, -27.568164825439453)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(45.382774353027344, 27.826128005981445, -27.568164825439453)
+        end
+    end)
+    
+    credits:Toggle("隐藏房间3", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(682.5320434570312, 5.827143669128418, -43.59938049316406)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(682.5320434570312, 5.827143669128418, -43.59938049316406)
+        end
+    end)
+    
+    credits:Toggle("第二章", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.72315216064453, 3.0005295276641846, -565.69775390625)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.72315216064453, 3.0005295276641846, -565.69775390625)
+        end
+    end)
+    
+    credits:Toggle("隐藏房间4", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-345.1400451660156, 4.7261528968811035, -2612.85302734375)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-345.1400451660156, 4.7261528968811035, -2612.85302734375)
+        end
+    end)
+    
+    credits:Toggle("隐藏房间5", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-405.47802734375, 3.176142930984497, -2390.422607421875)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-405.47802734375, 3.176142930984497, -2390.422607421875)
+        end
+    end)
+    
+    credits:Toggle("隐藏房间6", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-380.22491455078125, 3.3010048866271973, -1925.7362060546875)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-380.22491455078125, 3.3010048866271973, -1925.7362060546875)
+        end
+    end)
+    
+    credits:Toggle("游戏作者测试东西的地方", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-967.6585083007812, 2.8261330127716064, 333.0981750488281)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-967.6585083007812, 2.8261330127716064, 333.0981750488281)
+        end
+    end)
+    
+    credits:Toggle("隐藏房间7", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+        end
+    end)
+    
+    credits:Toggle("隐藏房间8", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+        end
+    end)
+    
+    local credits = creds:section("不同颜色的门",true)
+    
+    credits:Toggle("蓝色的门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(287.21331787109375, 2.8261330127716064, -106.50820922851562)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(287.21331787109375, 2.8261330127716064, -106.50820922851562)
+        end
+    end)
+    
+    credits:Toggle("紫色的门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216.9456329345703, 2.8261330127716064, -127.30233764648438)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216.9456329345703, 2.8261330127716064, -127.30233764648438)
+        end
+    end)
+    
+    credits:Toggle("红色门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(195.18211364746094, 2.8261330127716064, 28.475357055664062)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(195.18211364746094, 2.8261330127716064, 28.475357055664062)
+        end
+    end)
+    
+    
+    credits:Toggle("黄色门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(201.60107421875, 2.9451215267181396, -34.76359939575195)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(201.60107421875, 2.9451215267181396, -34.76359939575195)
+        end
+    end)
+    
+    credits:Toggle("粉色门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(328.2287902832031, 2.9444220066070557, 9.933579444885254)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(328.2287902832031, 2.9444220066070557, 9.933579444885254)
+        end
+    end)
+    
+    credits:Toggle("绿色门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(322.87713623046875, 2.9405789375305176, 70.53765106201172)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(322.87713623046875, 2.9405789375305176, 70.53765106201172)
+        end
+    end)
+    
+    credits:Toggle("橙色门", "", false, function(state)
+        if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(256.5617980957031, 2.924128770828247, 38.21192932128906)
+        else
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(256.5617980957031, 2.924128770828247, 38.21192932128906)
+        end
+    end)
+    
