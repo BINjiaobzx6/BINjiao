@@ -420,7 +420,7 @@ end
       Open.Draggable = true
       Open.MouseButton1Click:Connect(function()
           Main.Visible = not Main.Visible
-          Open.Text=Main.Visible and "点击我隐藏空中心" or "点击我打开空中心"
+          Open.Text=Main.Visible and "点击隐藏空中心" or "点击打开空中心"
       end)
       UIG.Parent = Open
       local window = {}
@@ -532,14 +532,14 @@ end
           SectionOpen.BorderSizePixel = 0
           SectionOpen.Position = UDim2.new(0, -33, 0, 5)
           SectionOpen.Size = UDim2.new(0, 26, 0, 26)
-          SectionOpen.Image = "http://www.roblox.com/asset/?id=6031302934"
+          SectionOpen.Image = "http://www.roblox.com/asset/?id=18254581416"
           
           SectionOpened.Name = "SectionOpened"
           SectionOpened.Parent = SectionOpen
           SectionOpened.BackgroundTransparency = 1.000
           SectionOpened.BorderSizePixel = 0
           SectionOpened.Size = UDim2.new(0, 26, 0, 26)
-          SectionOpened.Image = "http://www.roblox.com/asset/?id=6031302932"
+          SectionOpened.Image = "http://www.roblox.com/asset/?id=18254581416"
           SectionOpened.ImageTransparency = 1.000
     
           SectionToggle.Name = "SectionToggle"
