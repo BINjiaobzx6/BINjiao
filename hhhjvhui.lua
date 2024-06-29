@@ -211,7 +211,7 @@ end
       DropShadow.BackgroundTransparency = 1.000
       DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
       DropShadow.Size = UDim2.new(1, 10, 1, 10)
-      DropShadow.Image = "rbxassetid://17860086173"
+      DropShadow.Image = "rbxassetid://18254047828"
       DropShadow.ImageColor3 = Color3.fromRGB(255,255,255)
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
@@ -420,7 +420,7 @@ end
       Open.Draggable = true
       Open.MouseButton1Click:Connect(function()
           Main.Visible = not Main.Visible
-          Open.Text=Main.Visible and "关闭" or "打开"
+          Open.Text=Main.Visible and "隐藏空中心" or "打开空中心"
       end)
       UIG.Parent = Open
       local window = {}
