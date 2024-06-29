@@ -28,7 +28,7 @@ function Ripple(obj)
 		Ripple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Ripple.BackgroundTransparency = 1.000
 		Ripple.ZIndex = 8
-		Ripple.Image = "rbxassetid://18254047828"
+		Ripple.Image = "rbxassetid://18254581416"
 		Ripple.ImageTransparency = 0.800
 		Ripple.ScaleType = Enum.ScaleType.Fit
 		Ripple.ImageColor3 = Color3.fromRGB(255, 255, 255)
@@ -420,7 +420,7 @@ end
       Open.Draggable = true
       Open.MouseButton1Click:Connect(function()
           Main.Visible = not Main.Visible
-          Open.Text=Main.Visible and "隐藏空中心" or "打开空中心"
+          Open.Text=Main.Visible and "点击我隐藏空中心" or "点击我打开空中心"
       end)
       UIG.Parent = Open
       local window = {}
