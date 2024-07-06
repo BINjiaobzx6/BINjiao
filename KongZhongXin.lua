@@ -35,12 +35,12 @@ LBL.TextScaled = true
 LBL.TextSize = 14
 LBL.TextWrapped = true
 LBL.Visible = true
-----------------------------------------------
+
 local FpsLabel = LBL
 local Heartbeat = game:GetService("RunService").Heartbeat
 local LastIteration, Start
 local FrameUpdateTable = { }
-------------------------------------------
+
 local function HeartbeatUpdate()
 	LastIteration = tick()
 	for Index = #FrameUpdateTable, 1, -1 do
@@ -58,48 +58,34 @@ CoreGui:SetCore("SendNotification", {
     Title = "🇨🇳空中心🇨🇳",
     Text = "白名单认证成功（假的娱乐而已）",
     Duration = 1, 
-})--------------
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/untitled.txt')))()
+})
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/1mPger1J')))()
 local Window = OrionLib:MakeWindow({IntroText = "🇨🇳空中心Empty script🇨🇳",Name = "Empty 新空中心云端版", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
 local about = Window:MakeTab({
     Name = "公告栏必看",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
---破源大神不要改我这里呀
+
 about:AddParagraph("By:空/XingKong🇨🇳","")
 about:AddParagraph("圈钱思慕，不投胎🇨🇳","")
 about:AddParagraph("云端更新🇨🇳","")
 about:AddParagraph("垃圾免费缝合中心","")
 about:AddParagraph("缝合请勿骂🇨🇳","")
 
-Tab:AddButton ({
-	Name = "复制QQ群聊",
-	Callback = function ()
-	 setclipboard("915207093")
-	 OrionLib:MakeNotification({
-                    Name = "复制提示",
-                    Content = "你已复制，请前往QQ加入群聊",
-                    Time = 3
-                })
-	end
-})
-
 local Tab = Window:MakeTab({
     Name = "空作者制作的其他脚本",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
---------------
-local Section = Tab:AddSection({	Name = "枪战类含其余的脚本"})
---------------
+
 Tab:AddButton({
 	Name = "空透范围修复版",
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/obf_W9sUzSqwIqu68V8vk5DofNGe8jyjCuSVvo0X4IBRXZRQYMAp2W2md5Suhz6Jyq4E.lua"))()
   	end    
 })
---------------
+
 Tab:AddButton({
 	Name = "空绘制",
 	Callback = function()
@@ -140,15 +126,13 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/%E7%A9%BA%E8%84%9A%E6%9C%AC666.txt"))()
   	end    
-})----------------------------
-----------------------------
+})
+
 local Tab = Window:MakeTab({
     Name = "Color or die",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-
-local Section = Tab:AddSection({	Name = "这里全自制，但少了5个刷子🇨🇳"})
 
 Tab:AddButton({
 	Name = "笔刷5％",
@@ -343,8 +327,6 @@ Tab:AddButton({
      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.388307571411133, 3.099999189376831, -107.24565887451172)
   	end    
 })
-
-local Section = Tab:AddSection({	Name = "游戏进入前使用否则直接死亡"})
 
 Tab:AddButton({
 	Name = "木头人到达终点",
