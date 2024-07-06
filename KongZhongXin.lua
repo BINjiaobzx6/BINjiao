@@ -197,7 +197,6 @@ Tab:AddButton({
   	end    
 })
 
-local Section = Tab:AddSection({	Name = "隐藏房间，但不怎么齐🇨🇳"})
 
 Tab:AddButton({
 	Name = "隐藏房间1",
@@ -384,28 +383,22 @@ Tab:AddButton({
   	end    
 })
 
-local Section = Tab:AddSection({	Name = "其余射击类脚本"})
-
 Tab:AddButton({
   Name = "自瞄",
   Callback = function ()
-loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
   end
   
   Tab:AddButton({
   Name = "大范围",
   Callback = function ()
-loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
   end
 
 local Tab = Window:MakeTab({
     Name = "玩家👈🏻",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "玩家功能"
 })
 
 Tab:AddSlider({
