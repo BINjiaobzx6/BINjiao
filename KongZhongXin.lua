@@ -1230,18 +1230,21 @@ Tab:AddButton({
 	loadstring(game:GetObjects("rbxassetid://10040712770")[1].Source)()
 	end
 })
+
 Tab:AddButton({
 	Name = "防套",
 	Callback = function()
 	loadstring(game:GetObjects("rbxassetid://10040719318")[1].Source)()
 	end
 })
+
 Tab:AddButton({
 	Name = "范围",
 	Callback = function()
 	loadstring(game:GetObjects("rbxassetid://10040722920")[1].Source)()
 	end
 })
+
 Tab:AddButton({
 	Name = "无后座",
 	Callback = function()
@@ -1254,6 +1257,7 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 Tab:AddButton({
 	Name = "蜂",
 	Callback = function()	
@@ -1273,13 +1277,11 @@ Tab:AddButton({
 	end
 })
 
-
 local Tab = Window:MakeTab({
     Name = "巴掌模拟器✋🏻",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-
 
 Tab:AddButton({
 	Name = "巴掌模拟器",
@@ -1324,7 +1326,7 @@ Tab:AddButton({
      loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
   	end    
 })
---我的朋友
+
 Tab:AddButton({
 	Name = "冬凌中心",
 	Callback = function()
@@ -1348,37 +1350,42 @@ local key = "我不知道，反正好用"
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
   end
 })
---这脚本都是由NN制作脚本作者的功能
+
 local Tab = Window:MakeTab({
 	Name = "bf",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Tab:AddButton({
+
+    Tab:AddButton({
   Name = "BF脚本一",
   Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
   end
 })
+
     Tab:AddButton({
   Name = "BF脚本二",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
   end
 })
+
     Tab:AddButton({
   Name = "BF脚本三",
   Callback = function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua")()
   end
 })
+
     Tab:AddButton({
   Name = "BF脚本四",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
   end
 })
-Tab:AddButton({
+
+    Tab:AddButton({
   Name = "BF脚本五",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
@@ -1390,18 +1397,21 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 Tab:AddButton({
   Name = "Script 1",
   Callback = function()
     loadstring(game:HttpGet("https://pastefy.app/REPoaFWC/raw",true))();
     end
 })
+
 Tab:AddButton({
   Name = "Script 2",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/SaitamaBattlegrounds.lua"))()
     end
 })
+
     Tab:AddButton({
   Name = "Script 3",
   Callback = function()
