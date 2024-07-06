@@ -383,18 +383,6 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-  Name = "自瞄",
-  Callback = function ()
-    loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
-  end
-  
-  Tab:AddButton({
-  Name = "大范围",
-  Callback = function ()
-    loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
-  end
-
 local Tab = Window:MakeTab({
     Name = "玩家👈🏻",
     Icon = "rbxassetid://4483345998",
@@ -1284,67 +1272,6 @@ end
 })
 
 local Tab = Window:MakeTab({
-    Name = "其余脚本🍎",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-local Section = Tab:AddSection({	Name = "我从其他群聊里获取来的其他脚本"})
-
-Tab:AddButton({
-    Name="XC",
-    Callback=function()
-        getgenv().XC="作者XC"
-loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
-    end
-})
-
-Tab:AddButton({
-	Name = "复制作者QQ群",
-	Callback = function()
-     setclipboard("229161724")
-  	end
-})
-
-Tab:AddButton({
-	Name = "复制卡密下面的卡密",
-	Callback = function()
-     setclipboard("USA AER")
-  	end
-})
-
-Tab:AddButton({
-	Name = "导管中心",
-	Callback = function()
-     loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "冬凌中心",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-NEO.UI/main/%E2%82%AA%E5%B0%8F%E5%87%8C%E4%B8%AD%E5%BF%83(%E6%96%B0%E7%89%88ui).txt"))()
-  	end    
-})
-
-Tab:AddButton({
-  Name = "USA（卡密：USA AER）",
-  Callback = function()
-    getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "皇脚本🇨🇳",
-  Callback = function()
---支持很多游戏,doors,Evade,lifting simulator,x20 lifting simulator其余懒得加入了
-local Green = "作者empty：1342087454"
-local key = "我不知道，反正好用"
-loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
-  end
-})
-
-local Tab = Window:MakeTab({
 	Name = "bf",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -1410,4 +1337,65 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Hub/Load.lua", true))()
     end
+})
+
+local Tab = Window:MakeTab({
+    Name = "其余脚本🍎",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({	Name = "我从其他群聊里获取来的其他脚本"})
+
+Tab:AddButton({
+    Name="XC",
+    Callback=function()
+        getgenv().XC="作者XC"
+loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
+    end
+})
+
+Tab:AddButton({
+	Name = "复制作者QQ群",
+	Callback = function()
+     setclipboard("229161724")
+  	end
+})
+
+Tab:AddButton({
+	Name = "复制卡密下面的卡密",
+	Callback = function()
+     setclipboard("USA AER")
+  	end
+})
+
+Tab:AddButton({
+	Name = "导管中心",
+	Callback = function()
+     loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "冬凌中心",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/Xiao-Ling-NEO.UI/main/%E2%82%AA%E5%B0%8F%E5%87%8C%E4%B8%AD%E5%BF%83(%E6%96%B0%E7%89%88ui).txt"))()
+  	end    
+})
+
+Tab:AddButton({
+  Name = "USA（卡密：USA AER）",
+  Callback = function()
+    getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "皇脚本🇨🇳",
+  Callback = function()
+--支持很多游戏,doors,Evade,lifting simulator,x20 lifting simulator其余懒得加入了
+local Green = "作者empty：1342087454"
+local key = "我不知道，反正好用"
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
+  end
 })
