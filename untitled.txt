@@ -179,7 +179,7 @@ local function ReturnProperty(Object)
 		return "Color"
 	end 
 	if Object:IsA("TextLabel") or Object:IsA("TextBox") then
-		return "TextColor2"
+		return "TextColor3"
 	end   
 	if Object:IsA("ImageLabel") or Object:IsA("ImageButton") then
 		return "ImageColor3"
@@ -651,8 +651,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "XK脚本中心",
-			Content = "关闭脚本，难道不会再用了？",
+			Name = "再见，朋友",
+			Content = "XK脚本中心，希望你的回来",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
@@ -1764,4 +1764,3 @@ function OrionLib:Destroy()
 end
 
 return OrionLib"
- https://pastebin.com/raw/qz5Vsxuk#:~:text=local%20UserInputService%20%3D%20game%3AGetService,end%0A%0Areturn%20OrionLib
