@@ -12,12 +12,12 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(248, 248, 248),
-			Second = Color3.fromRGB(231, 231, 236),
-			Stroke = Color3.fromRGB(202, 203, 209),
-			Divider = Color3.fromRGB(202, 203, 209),
-			Text = Color3.fromRGB(255, 176, 0),
-			TextDark = Color3.fromRGB(17, 17, 17)
+			Main = Color3.fromRGB(25, 25, 25),
+			Second = Color3.fromRGB(32, 32, 32),
+			Stroke = Color3.fromRGB(60, 60, 60),
+			Divider = Color3.fromRGB(60, 60, 60),
+			Text = Color3.fromRGB(240, 240, 240),
+			TextDark = Color3.fromRGB(150, 150, 150)
 		}
 	},
 	SelectedTheme = "Default",
@@ -179,7 +179,7 @@ local function ReturnProperty(Object)
 		return "Color"
 	end 
 	if Object:IsA("TextLabel") or Object:IsA("TextBox") then
-		return "TextColor3"
+		return "TextColor2"
 	end   
 	if Object:IsA("ImageLabel") or Object:IsA("ImageButton") then
 		return "ImageColor3"
@@ -326,9 +326,9 @@ end)
 CreateElement("ScrollFrame", function(Color, Width)
 	local ScrollFrame = Create("ScrollingFrame", {
 		BackgroundTransparency = 1,
-		MidImage = "rbxassetid://18353828320",
-		BottomImage = "rbxassetid://18353828320",
-		TopImage = "rbxassetid://18353828320",
+		MidImage = "rbxassetid://7445543667",
+		BottomImage = "rbxassetid://7445543667",
+		TopImage = "rbxassetid://7445543667",
 		ScrollBarImageColor3 = Color,
 		BorderSizePixel = 0,
 		ScrollBarThickness = Width,
@@ -446,6 +446,21 @@ function OrionLib:MakeNotification(NotificationConfig)
 		NotificationFrame:Destroy()
 	end)
 end    
+
+function OrionLib:Init()
+	if OrionLib.SaveCfg then	
+		pcall(function()
+			if isfile(OrionLib.Folder .. "/" .. game.GameId .. ".txt") then
+				LoadCfg(readfile(OrionLib.Folder .. "/" .. game.GameId .. ".txt"))
+				OrionLib:MakeNotification({
+					Name = "配置",
+					Content = "自动载入游戏配置" .. game.GameId .. ".",
+					Time = 5
+				})
+			end
+		end)		
+	end	
+end	
 
 function OrionLib:MakeWindow(WindowConfig)
 	local FirstTab = true
@@ -636,8 +651,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "空",
-			Content = "谢谢",
+			Name = "XK脚本中心",
+			Content = "关闭脚本，难道不会再用了？",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
@@ -1365,7 +1380,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					BackgroundTransparency = 1,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					PlaceholderColor3 = Color3.fromRGB(210,210,210),
-					PlaceholderText = "请输入",
+					PlaceholderText = "数字",
 					Font = Enum.Font.GothamSemibold,
 					TextXAlignment = Enum.TextXAlignment.Center,
 					TextSize = 14,
@@ -1749,4 +1764,4 @@ function OrionLib:Destroy()
 end
 
 return OrionLib"
- https://pastebin.com/raw/1mPger1J#:~:text=local%20UserInputService%20%3D%20game%3AGetService,end%0A%0Areturn%20OrionLib
+ https://pastebin.com/raw/qz5Vsxuk#:~:text=local%20UserInputService%20%3D%20game%3AGetService,end%0A%0Areturn%20OrionLib
