@@ -254,7 +254,7 @@ local flags = {
 local DELFLAGS = {table.unpack(flags)}
 local esptable = {doors={},keys={},items={},books={},entity={},chests={},lockers={},people={},gold={}}
 
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/1mPger1J"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -368,7 +368,7 @@ Start.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
         local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/qz5Vsxuk'))();
 
-local Window = OrionLib:MakeWindow({Name = "ctl", HidePremium = false, SaveConfig = true,IntroText = "ctl", ConfigFolder = "ctl"})
+local Window = OrionLib:MakeWindow({Name = "ctl", HidePremium = false, SaveConfig = true,IntroText = "XK作者免费给", ConfigFolder = "114514xhxh ctl"})
 
 local player = Window:MakeTab({
 	Name = "公告",
