@@ -1,4 +1,4 @@
-"local UserInputService = game:GetService("UserInputService")
+local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -1763,4 +1763,4 @@ function OrionLib:Destroy()
 	Orion:Destroy()
 end
 
-return OrionLib"
+return OrionLib
