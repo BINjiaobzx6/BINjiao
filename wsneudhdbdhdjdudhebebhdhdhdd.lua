@@ -968,50 +968,6 @@ local QYTab = Window:MakeTab({
 QYTab:AddParagraph("这些功能还没有适配我的这个UI","所以需要等几天他就适配了")
 
 QYTab:AddToggle({
-Name = "门透视",
-Default = false,
-Callback = function(val)
-    flags.espdoors = val
-    
-    if val then
-        local function setup(room)
-            local door = room:WaitForChild("Door"):WaitForChild("Door")
-            
-            task.wait(0.1)
-            local h = esp(door,Color3.fromRGB(255,240,0),door,"门")
-            table.insert(esptable.doors,h)
-            
-            door:WaitForChild("Open").Played:Connect(function()
-                h.delete()
-            end)
-            
-            door.AncestryChanged:Connect(function()
-                h.delete()
-            end)
-        end
-        
-        local addconnect
-        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
-            setup(room)
-        end)
-        
-        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
-            if room:FindFirstChild("Assets") then
-                setup(room) 
-            end
-        end
-        
-        repeat task.wait() until not flags.espdoors
-        addconnect:Disconnect()
-        
-        for i,v in pairs(esptable.doors) do
-            v.delete()
-        end 
-    end
-end    
-})
-
-QYTab:AddToggle({
 Name = "A-000无锁",
 Default = false,
 Callback = function(val)
