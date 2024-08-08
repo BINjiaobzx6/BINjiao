@@ -1012,59 +1012,6 @@ end
 })
 
 QYTab:AddToggle({
-Name = "书透视",
-Default = false,
-Callback = function(val)
-    flags.espbooks = val
-    
-    if val then
-        local function check(v)
-            if v:IsA("Model") and (v.Name == "LiveHintBook" or v.Name == "LiveBreakerPolePickup") then
-                task.wait(0.1)
-                
-                local h = esp(v,Color3.fromRGB(160,190,255),v.PrimaryPart,"书")
-                table.insert(esptable.books,h)
-                
-                v.AncestryChanged:Connect(function()
-                    if not v:IsDescendantOf(room) then
-                        h.delete() 
-                    end
-                end)
-            end
-        end
-        
-        local function setup(room)
-            if room.Name == "50" or room.Name == "100" then
-                room.DescendantAdded:Connect(function(v)
-                    check(v) 
-                end)
-                
-                for i,v in pairs(room:GetDescendants()) do
-                    check(v)
-                end
-            end
-        end
-        
-        local addconnect
-        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
-            setup(room)
-        end)
-        
-        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
-            setup(room) 
-        end
-        
-        repeat task.wait() until not flags.espbooks
-        addconnect:Disconnect()
-        
-        for i,v in pairs(esptable.books) do
-            v.delete()
-        end 
-    end
-end    
-})
-
-QYTab:AddToggle({
 Name = "柜子透视",
 Default = false,
 Callback = function(val)
