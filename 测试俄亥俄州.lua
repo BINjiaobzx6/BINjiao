@@ -1,10 +1,96 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/ui.lua')))()
-local Window = OrionLib:MakeWindow({IntroText = "XK脚本中心V3.5",Name = "XK脚本中心", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+local Window = OrionLib:MakeWindow({IntroText = "XK",Name = "XK--俄亥俄州", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
 
 local about = Window:MakeTab({
-    Name = "信息",
+    Name = "不支持列表",
     Icon = "rbxassetid://7734068321",
     PremiumOnly = false
+})
+
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+about:AddParagraph("不支持注入器","忍者")
+
+local Tab = Window:MakeTab({
+    Name = "功能",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = '移动速度',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        player = game.Players.LocalPlayer.Character
+        player.Humanoid.WalkSpeed = Value
+        player.HumanoidRootPart.CustomPhysicalProperties = PhysicalProperties.new(9e99, 9e99, 9e99, 9e99, 9e99)
+    end   
+})
+Tab:AddTextbox({
+    Name = '跳跃高度',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        local humanoid = player.Character:FindFirstChildOfClass('Humanoid')
+        humanoid.JumpPower = Value
+    end   
+})
+
+Tab:AddButton({
+    Name = '绘制零件',
+    Callback = function()
+        while true do
+            for i,l in pairs(game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,v in pairs(l:GetChildren()) do
+                    if v.ClassName == 'MeshPart' or 'Part' then
+                        for i,e in pairs(v:GetChildren()) do
+                            if e.ClassName == 'ProximityPrompt' then
+                                if e.ObjectText == 'door' or e.ObjectText == 'door' or e.ObjectText == 'door' or e.ObjectText == 'door' or e.ObjectText == 'Scrap' then
+                                    xd = Instance.new('BillboardGui')
+                                    xd.Parent = v
+                                    xd.AlwaysOnTop = true
+                                    xd.Size = UDim2.new(0, 100, 0, 25)
+                                    Frame = Instance.new('Frame')
+                                    Frame.Parent = xd
+                                    Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+                                    Frame.Size = UDim2.new(1, 0, 1, 0)
+                                    Frame.BackgroundTransparency = 1
+                                    text = Instance.new('TextLabel')
+                                    text.TextScaled = true
+                                    text.BackgroundColor3 = Color3.new(255, 0, 0)
+                                    text.Parent = Frame
+                                    text.Text = e.ObjectText
+                                    text.Size = UDim2.new(1, 0, 1, 0)
+                                    text.BackgroundTransparency = 1
+                                    text.TextColor3 = Color3.new(1, 1, 1)
+                                else
+
+                                end
+                            end
+        
+                        end
+        
+                    end
+        
+        
+                end
+            end
+            wait()
+            for i,v in pairs (game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,k in pairs(v:GetChildren()) do
+                    for i,l in pairs(k:GetChildren()) do
+                        if l.ClassName == 'BillboardGui' then
+                            l:Remove()
+                        end
+                    end
+                end
+            end
+        
+        end
+    end    
 })
 
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
@@ -641,7 +727,7 @@ Tab:AddButton({
                     if v.ClassName == 'MeshPart' or 'Part' then
                         for i,e in pairs(v:GetChildren()) do
                             if e.ClassName == 'ProximityPrompt' then
-                                if e.ObjectText == 'Medical Supplies' or e.ObjectText == 'Weapon components' or e.ObjectText == 'Explosives' or e.ObjectText == 'Weapon Parts' or e.ObjectText == 'Scrap' then
+                                if e.ObjectText == 'door' or e.ObjectText == 'door' or e.ObjectText == 'door' or e.ObjectText == 'door' or e.ObjectText == 'Scrap' then
                                     xd = Instance.new('BillboardGui')
                                     xd.Parent = v
                                     xd.AlwaysOnTop = true
@@ -695,3 +781,91 @@ Tab:AddButton({
     end
     end    
 })
+
+Tab:AddDropdown({
+    Name = '加入阵营',
+    Default = '',
+    Options = {'警察','囚犯','罪犯'},
+    Callback = function(Value)
+    if Value == '警察' then
+        workspace.Remote.TeamEvent:FireServer('Bright blue')
+    elseif Value == '囚犯' then
+        workspace.Remote.TeamEvent:FireServer('Bright orange')
+    elseif Value == '罪犯' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-976.125183, 109.123924, 2059.99536)
+    end
+    end
+})
+
+Tab:AddButton({
+    Name = '敌人看不见你',
+    Callback = function()
+    local player = game.Players.LocalPlayer
+    position     = player.Character.HumanoidRootPart.Position
+    wait(0.1)
+    player.Character:MoveTo(position + Vector3.new(0, 1000000, 0))
+    wait(0.1)
+    humanoidrootpart = player.Character.HumanoidRootPart:clone()
+    wait(0.1)
+    player.Character.HumanoidRootPart:Destroy()
+    humanoidrootpart.Parent = player.Character
+    player.Character:MoveTo(position)
+    wait()
+    game.Players.LocalPlayer.Character.Torso.Transparency = 1
+    game.Players.LocalPlayer.Character.Head.Transparency  = 1
+    game.Players.LocalPlayer.Character['Left Arm'].Transparency = 1
+    game.Players.LocalPlayer.Character['Right Arm'].Transparency = 1
+    game.Players.LocalPlayer.Character['Left Leg'].Transparency = 1
+    game.Players.LocalPlayer.Character['Right Leg'].Transparency = 1
+    game.Players.LocalPlayer.Character.Humanoid:RemoveAccessories()
+    game.Players.LocalPlayer.Character.Head.face:Remove()
+    end
+})
+
+Tab:AddButton({
+    Name = '瞬移物资',
+    Callback = function()
+    for i,l in pairs(game:GetService(workspace):GetChildren()) do
+        for i,v in pairs(l:GetChildren()) do
+            if v.Name == 'ProximityPrompt' then
+                local epoh1 = l.WorldPivot
+                local epoh2 = game:GetService('Players')
+                local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+                epoh3.CFrame = epoh1
+            end
+        end
+    end
+    end
+})
+
+Tab:AddToggle({
+    Name = '挂机',
+    Value = false,
+    Callback = function(Value)
+    Afk1 = Value
+        if Afk1 then
+            Afk2()
+        end
+    end    
+})
+
+Afk2 = function()
+while Afk1 do
+wait(0.2)
+local epoh1 = CFrame.new(-442040, 4, 4)--1
+local epoh2 = game:GetService('Players')
+local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+epoh3.CFrame = epoh1
+wait(0.2)
+local epoh1 = CFrame.new(-442060, 4, 4)--2
+local epoh2 = game:GetService('Players')
+local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+epoh3.CFrame = epoh1
+wait(0.2)
+local epoh1 = CFrame.new(-442080, 4, 4)--3
+local epoh2 = game:GetService('Players')
+local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+epoh3.CFrame = epoh1
+end
+end
+OrionLib:Init()
