@@ -215,7 +215,7 @@ end
 
 local Tab = Window:MakeTab({
     Name = "绘制物品",
-    Icon = "rbxassetid://17053443669",
+    Icon = "rbxassetid://7733779610",
     PremiumOnly = false
 })
 
@@ -936,6 +936,13 @@ local Tab = Window:MakeTab({
     Name = "其他功能",
     Icon = "rbxassetid://7733779610",
     PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "无限跳跃",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+  end
 })
 
 Tab:AddToggle({
