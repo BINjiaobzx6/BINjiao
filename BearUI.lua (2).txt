@@ -406,7 +406,7 @@
         Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
         Open.Size = UDim2.new(0, 61, 0, 32)
         Open.Font = Enum.Font.SourceSans
-        Open.Text = "关闭/打开"
+        Open.Text = "隐藏/打开"
         Open.TextColor3 = Color3.fromRGB(255, 255, 255)
         Open.TextSize = 14
         Open.Active = true
@@ -437,7 +437,7 @@
             TabIco.BackgroundTransparency = 1
             TabIco.BorderSizePixel = 0
             TabIco.Size = UDim2.new(0, 24, 0, 24)
-            TabIco.Image = ("rbxassetid://16060333448"):format(icon or 16060333448)
+            TabIco.Image = ("rbxassetid://%s"):format(icon or 4370341699)
             TabIco.ImageTransparency = 0.2
             TabText.Name = "TabText"
             TabText.Parent = TabIco
