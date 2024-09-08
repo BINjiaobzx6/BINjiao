@@ -123,7 +123,7 @@ function library.new(library, name,theme)
       end
 -------------------------AL------------------------------
 ALTransparency = 0.6
-ALcolor = Color3.fromRGB(0, 255, 0)
+ALcolor = Color3.fromRGB(202, 203, 209)
 -------------------------AL------------------------------
 if theme == 'dark' then
     MainColor = Color3.fromRGB(25, 25, 25)
@@ -216,7 +216,7 @@ end
       DropShadow.BackgroundTransparency = 1.000
       DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
       DropShadow.Size = UDim2.new(1, 10, 1, 10)
-      DropShadow.Image = "rbxassetid://79088040676066" --背景
+      DropShadow.Image = "rbxassetid://110307422225415" --背景
       DropShadow.ImageColor3 = Color3.fromRGB(255,255,255)
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
@@ -452,10 +452,10 @@ Open.BorderSizePixel = 0
 Open.Size = UDim2.new(0, 50, 0, 50)
 Open.Active = true
 Open.Draggable = true
-Open.Image = "rbxassetid://97863901908184"
+Open.Image = "rbxassetid://140219909958959"
 Open.MouseButton1Click:Connect(function()
   Main.Visible = not Main.Visible
-  Open.Image = Main.Visible and "rbxassetid://97863901908184" or "rbxassetid://97863901908184" --开关的图
+  Open.Image = Main.Visible and "rbxassetid://140219909958959" or "rbxassetid://140219909958959" --开关的图
 end)
 
 UICorner_2.CornerRadius = UDim.new(0, 90)
@@ -571,14 +571,14 @@ UIG.Parent = Open
           SectionOpen.BorderSizePixel = 0
           SectionOpen.Position = UDim2.new(0, -33, 0, 5)
           SectionOpen.Size = UDim2.new(0, 26, 0, 26)
-          SectionOpen.Image = "rbxassetid://97863901908184"
+          SectionOpen.Image = "rbxassetid://140219909958959"
           
           SectionOpened.Name = "SectionOpened"
           SectionOpened.Parent = SectionOpen
           SectionOpened.BackgroundTransparency = 1.000
           SectionOpened.BorderSizePixel = 0
           SectionOpened.Size = UDim2.new(0, 26, 0, 26)
-          SectionOpened.Image = "rbxassetid://94970381981892"
+          SectionOpened.Image = "rbxassetid://140219909958959"
           SectionOpened.ImageTransparency = 1.000
     
           SectionToggle.Name = "SectionToggle"
