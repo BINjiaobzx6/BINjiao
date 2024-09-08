@@ -521,16 +521,16 @@ creditsHUB:Button(
     )
     
 local creds = window:Tab("造船寻宝", "")
-    local credits = creds:section("功能内容", true)    
+    local WSB = creds:section("功能内容", true)    
     
-credits:Button(
+WSB:Button(
         "自动刷金条",
         function()
             loadstring(game:HttpGet("https://pastebin.com/raw/Lyy77rnr",true))()
         end
     )   
  
-Tab3:Toggle(
+WSB:Toggle(
     "自动刷金币",
     "text",
     false,
@@ -619,7 +619,7 @@ Tab3:Toggle(
     end
 )   
        
-Tab3:Toggle(
+WSB:Toggle(
     "快速刷金币",
     "text",
     false,
@@ -713,7 +713,7 @@ Tab3:Toggle(
     end
 )
        
-Tab3:Toggle(
+WSB:Toggle(
     "自动索赔金币",
     "text",
     false,
@@ -789,7 +789,7 @@ Tab3:Toggle(
     end
 )       
 
-fakeTab3:Button(
+WSB:Button(
     "无限方块（假）",
     function()
         spawn(
@@ -812,7 +812,7 @@ fakeTab3:Button(
     end
 )       
        
-credits:Button(
+    WSB:Button(
         "工具包",
         function()
             loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
@@ -830,6 +830,7 @@ LOlTab3:Button(
         Chicken:FireServer("ChickenCharacter")
     end
 )
+
 LOlTab3:Button(
     "变企鹅",
     function()
@@ -839,6 +840,7 @@ LOlTab3:Button(
         penguin:FireServer("PenguinCharacter")
     end
 )
+
 LOlTab3:Button(
     "变狐狸",
     function()
