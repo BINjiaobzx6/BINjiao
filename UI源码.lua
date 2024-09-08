@@ -216,7 +216,7 @@ end
       DropShadow.BackgroundTransparency = 1.000
       DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
       DropShadow.Size = UDim2.new(1, 10, 1, 10)
-      DropShadow.Image = "rbxassetid://102447480851947" --背景
+      DropShadow.Image = "rbxassetid://79088040676066" --背景
       DropShadow.ImageColor3 = Color3.fromRGB(255,255,255)
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
@@ -455,7 +455,7 @@ Open.Draggable = true
 Open.Image = "rbxassetid://18942159845"
 Open.MouseButton1Click:Connect(function()
   Main.Visible = not Main.Visible
-  Open.Image = Main.Visible and "rbxassetid://94970381981892" or "rbxassetid://94970381981892" --开关的图
+  Open.Image = Main.Visible and "rbxassetid://94970381981892" or "rbxassetid://97863901908184" --开关的图
 end)
 
 UICorner_2.CornerRadius = UDim.new(0, 90)
@@ -484,7 +484,7 @@ UIG.Parent = Open
         TabIco.BackgroundTransparency = 1.000
         TabIco.BorderSizePixel = 0
         TabIco.Size = UDim2.new(0, 24, 0, 24)
-        TabIco.Image = "rbxassetid://18941716391" or icon and "rbxassetid://"..icon
+        TabIco.Image = "rbxassetid://97863901908184" or icon and "rbxassetid://"..icon
         TabIco.ImageTransparency = 0.2
         
         TabText.Name = "TabText"
@@ -571,7 +571,7 @@ UIG.Parent = Open
           SectionOpen.BorderSizePixel = 0
           SectionOpen.Position = UDim2.new(0, -33, 0, 5)
           SectionOpen.Size = UDim2.new(0, 26, 0, 26)
-          SectionOpen.Image = "rbxassetid://18941716391"
+          SectionOpen.Image = "rbxassetid://97863901908184"
           
           SectionOpened.Name = "SectionOpened"
           SectionOpened.Parent = SectionOpen
