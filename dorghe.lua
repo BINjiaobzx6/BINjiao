@@ -267,7 +267,7 @@ function Script.Functions.ESP(args: ESP)
 end
 
 function Script.Functions.DoorESP(room)
-    local door = room:WaitForChild("门透视")
+    local door = room:WaitForChild("Door")
     local locked = room:GetAttribute("RequiresKey")
 
     if door and not door:GetAttribute("Opened") then
@@ -1172,44 +1172,44 @@ end
 
 --// Visuals \\--
 
-local ESPGroupBox = Tabs.Visuals:AddLeftGroupbox("ESP") do
+local ESPGroupBox = Tabs.Visuals:AddLeftGroupbox("实用功能栏") do
     ESPGroupBox:AddToggle("DoorESP", {
-        Text = "Door",
+        Text = "门透视",
         Default = false,
     }):AddColorPicker("DoorEspColor", {
         Default = Color3.new(0, 1, 1),
     })
 
     ESPGroupBox:AddToggle("ObjectiveESP", {
-        Text = "Objective",
+        Text = "钥匙之类透视",
         Default = false,
     }):AddColorPicker("ObjectiveEspColor", {
         Default = Color3.new(0, 1, 0),
     })
 
     ESPGroupBox:AddToggle("EntityESP", {
-        Text = "Entity",
+        Text = "怪物透视",
         Default = false,
     }):AddColorPicker("EntityEspColor", {
         Default = Color3.new(1, 0, 0),
     })
 
     ESPGroupBox:AddToggle("ItemESP", {
-        Text = "Item",
+        Text = "物品透视",
         Default = false,
     }):AddColorPicker("ItemEspColor", {
         Default = Color3.new(1, 0, 1),
     })
 
     ESPGroupBox:AddToggle("GoldESP", {
-        Text = "Gold",
+        Text = "金币透视",
         Default = false,
     }):AddColorPicker("GoldEspColor", {
         Default = Color3.new(1, 1, 0),
     })
 
     ESPGroupBox:AddToggle("PlayerESP", {
-        Text = "Player",
+        Text = "玩家透视",
         Default = false,
     }):AddColorPicker("PlayerEspColor", {
         Default = Color3.new(1, 1, 1),
@@ -1218,17 +1218,17 @@ end
 
 local ESPSettingsGroupBox = Tabs.Visuals:AddLeftGroupbox("ESP Settings") do
     ESPSettingsGroupBox:AddToggle("ESPHighlight", {
-        Text = "Enable Highlight",
+        Text = "显示ESP轮廓",
         Default = true,
     })
 
     ESPSettingsGroupBox:AddToggle("ESPDistance", {
-        Text = "Show Distance",
+        Text = "显示距离",
         Default = true,
     })
 
     ESPSettingsGroupBox:AddSlider("ESPFillTransparency", {
-        Text = "Fill Transparency",
+        Text = "轮廓亮度低",
         Default = 0.75,
         Min = 0,
         Max = 1,
@@ -1236,7 +1236,7 @@ local ESPSettingsGroupBox = Tabs.Visuals:AddLeftGroupbox("ESP Settings") do
     })
 
     ESPSettingsGroupBox:AddSlider("ESPOutlineTransparency", {
-        Text = "Outline Transparency",
+        Text = "调节轮廓亮度",
         Default = 0,
         Min = 0,
         Max = 1,
@@ -1244,7 +1244,7 @@ local ESPSettingsGroupBox = Tabs.Visuals:AddLeftGroupbox("ESP Settings") do
     })
 
     ESPSettingsGroupBox:AddSlider("ESPTextSize", {
-        Text = "Text Size",
+        Text = "透视大小",
         Default = 22,
         Min = 16,
         Max = 26,
@@ -1252,9 +1252,9 @@ local ESPSettingsGroupBox = Tabs.Visuals:AddLeftGroupbox("ESP Settings") do
     })
 end
 
-local AmbientGroupBox = Tabs.Visuals:AddRightGroupbox("Ambient") do
+local AmbientGroupBox = Tabs.Visuals:AddRightGroupbox("亮度") do
     AmbientGroupBox:AddToggle("Fullbright", {
-        Text = "Fullbright",
+        Text = "高亮",
         Default = false,
     })
 end
@@ -1262,27 +1262,27 @@ end
 local NotifyTabBox = Tabs.Visuals:AddRightTabbox() do
     local NotifyTab = NotifyTabBox:AddTab("Notifier") do
         NotifyTab:AddToggle("NotifyEntity", {
-            Text = "Notify Entity",
+            Text = "怪物通知",
             Default = false,
         })
 
         NotifyTab:AddToggle("NotifyPadlock", {
-            Text = "Notify Library Code",
+            Text = "通知库代码",
             Default = false,
         })
     end
 
     local NotifySettingsTab = NotifyTabBox:AddTab("Settings") do
         NotifySettingsTab:AddToggle("NotifySound", {
-            Text = "Play Alert Sound",
+            Text = "通知有提示音",
             Default = true,
         })
     end
 end
 
-local SelfGroupBox = Tabs.Visuals:AddRightGroupbox("Self") do
+local SelfGroupBox = Tabs.Visuals:AddRightGroupbox("视野") do
     SelfGroupBox:AddSlider("FOV", {
-        Text = "Field of View",
+        Text = "调节人物视野",
         Default = 70,
         Min = 70,
         Max = 120,
@@ -1290,17 +1290,17 @@ local SelfGroupBox = Tabs.Visuals:AddRightGroupbox("Self") do
     })
     
     SelfGroupBox:AddToggle("NoCamShake", {
-        Text = "No Camera Shake",
+        Text = "防止抖动",
         Default = false,
     })
 
     SelfGroupBox:AddToggle("HidingTransparency", {
-        Text = "Translucent " .. HidingPlaceName[floor.Value],
+        Text = "柜子透明 " .. HidingPlaceName[floor.Value],
         Default = false
     })
 
     SelfGroupBox:AddSlider("HidingTransparency", {
-        Text = "Hiding Transparency",
+        Text = "透明程度",
         Default = 0.5,
         Min = 0,
         Max = 1,
@@ -1311,10 +1311,10 @@ end
 --// Floor \\--
 task.spawn(function()
     if isHotel then
-        local Hotel_AntiEntityGroupBox = Tabs.Floor:AddLeftGroupbox("Anti-Entity") do
+        local Hotel_AntiEntityGroupBox = Tabs.Floor:AddLeftGroupbox("反实体") do
 
             Hotel_AntiEntityGroupBox:AddToggle("AntiSeekObstructions", {
-                Text = "Anti-Seek Obstructions",
+                Text = "反搜索障碍物",
                 Default = false
             })
 
