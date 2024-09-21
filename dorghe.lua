@@ -140,7 +140,7 @@ local Options = getgenv().Linoria.Options
 local Toggles = getgenv().Linoria.Toggles
 
 local Window = Library:CreateWindow({
-	Title = "MS V2 DOORS 汉化作者：小玄奘",
+	Title = "MS V2 汉化作者：小玄奘 提供者：ghgj 服务器：DOORS",
 	Center = true,
 	AutoShow = true,
 	Resizable = true,
@@ -150,11 +150,11 @@ local Window = Library:CreateWindow({
 })
 
 local Tabs = {
-	Main = Window:AddTab("Main"),
-    Exploits = Window:AddTab("Exploits"),
-    Visuals = Window:AddTab("Visuals"),
-    Floor = Window:AddTab("Floor"),
-	["UI Settings"] = Window:AddTab("UI Settings"),
+	Main = Window:AddTab("主要的"),
+    Exploits = Window:AddTab("移除怪物"),
+    Visuals = Window:AddTab("功能"),
+    Floor = Window:AddTab("floor2的"),
+	["UI Settings"] = Window:AddTab("就是UI没必要看"),
 }
 
 --// Functions \\--
@@ -281,7 +281,7 @@ function Script.Functions.DoorESP(room)
         local doorEsp = Script.Functions.ESP({
             Type = "Door",
             Object = doors > 1 and door or door:WaitForChild("Door"),
-            Text = locked and string.format("门 %s [锁定的]", room.Name + 1) or string.format("Door %s", room.Name + 1),
+            Text = locked and string.format("门 %s [锁定的]", room.Name + 1) or string.format("门 %s", room.Name + 1),
             Color = Options.DoorEspColor.Value
         })
 
@@ -1992,7 +1992,7 @@ end)
 local MenuGroup = Tabs["UI Settings"]:AddLeftGroupbox("Menu")
 local CreditsGroup = Tabs["UI Settings"]:AddRightGroupbox("Credits")
 
-MenuGroup:AddToggle("KeybindMenuOpen", { Default = false, Text = "Open Keybind Menu", Callback = function(value) Library.KeybindFrame.Visible = value end})
+MenuGroup:AddToggle("KeybindMenuOpen", { Default = false, Text = "其他信息", Callback = function(value) Library.KeybindFrame.Visible = value end})
 MenuGroup:AddDivider()
 MenuGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", { Default = "RightShift", NoUI = true, Text = "Menu keybind" })
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
