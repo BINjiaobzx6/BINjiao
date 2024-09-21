@@ -267,7 +267,7 @@ function Script.Functions.ESP(args: ESP)
 end
 
 function Script.Functions.DoorESP(room)
-    local door = room:WaitForChild("Door")
+    local door = room:WaitForChild("门透视")
     local locked = room:GetAttribute("RequiresKey")
 
     if door and not door:GetAttribute("Opened") then
@@ -279,9 +279,9 @@ function Script.Functions.DoorESP(room)
         end
 
         local doorEsp = Script.Functions.ESP({
-            Type = "门透视",
+            Type = "Door",
             Object = doors > 1 and door or door:WaitForChild("Door"),
-            Text = locked and string.format("门 %s [Locked]", room.Name + 1) or string.format("门 %s", room.Name + 1),
+            Text = locked and string.format("Door %s [Locked]", room.Name + 1) or string.format("Door %s", room.Name + 1),
             Color = Options.DoorEspColor.Value
         })
 
@@ -309,7 +309,7 @@ function Script.Functions.ObjectiveESP(room)
 
         if generator then
             Script.Functions.ESP({
-                Type = "钥匙之类透视",
+                Type = "Objective",
                 Object = generator,
                 Text = "Generator",
                 Color = Options.ObjectiveEspColor.Value
