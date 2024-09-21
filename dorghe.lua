@@ -281,7 +281,7 @@ function Script.Functions.DoorESP(room)
         local doorEsp = Script.Functions.ESP({
             Type = "Door",
             Object = doors > 1 and door or door:WaitForChild("Door"),
-            Text = locked and string.format("Door %s [Locked]", room.Name + 1) or string.format("Door %s", room.Name + 1),
+            Text = locked and string.format("门 %s [锁定的]", room.Name + 1) or string.format("Door %s", room.Name + 1),
             Color = Options.DoorEspColor.Value
         })
 
@@ -299,7 +299,7 @@ function Script.Functions.ObjectiveESP(room)
             Script.Functions.ESP({
                 Type = "Objective",
                 Object = key,
-                Text = string.format("Key %s", room.Name + 1),
+                Text = string.format("钥匙 %s", room.Name + 1),
                 Color = Options.ObjectiveEspColor.Value
             })
         end
@@ -361,7 +361,7 @@ function Script.Functions.GoldESP(gold)
     Script.Functions.ESP({
         Type = "Gold",
         Object = gold,
-        Text = string.format("Gold [%s]", gold:GetAttribute("GoldValue")),
+        Text = string.format("金币 [%s]", gold:GetAttribute("GoldValue")),
         Color = Options.GoldEspColor.Value
     })
 end
@@ -938,7 +938,7 @@ print("reached main")
 
 local PlayerGroupBox = Tabs.Main:AddLeftGroupbox("Player") do
     PlayerGroupBox:AddSlider("SpeedSlider", {
-        Text = "Speed Boost",
+        Text = "调节反作弊速度",
         Default = 0,
         Min = 0,
         Max = 7,
@@ -946,29 +946,29 @@ local PlayerGroupBox = Tabs.Main:AddLeftGroupbox("Player") do
     })
 
     PlayerGroupBox:AddToggle("Noclip", {
-        Text = "Noclip",
+        Text = "穿墙",
         Default = false
     })
 
     PlayerGroupBox:AddToggle("InstaInteract", {
-        Text = "Instant Interact",
+        Text = "绕过反作弊速度",
         Default = false
     })
 end
 
 local ReachGroupBox = Tabs.Main:AddLeftGroupbox("Reach") do
     ReachGroupBox:AddToggle("DoorReach", {
-        Text = "Door Reach",
+        Text = "远程开门",
         Default = false
     })
 
     ReachGroupBox:AddToggle("PromptClip", {
-        Text = "Prompt Clip",
+        Text = "提示剪辑",
         Default = false
     })
 
     ReachGroupBox:AddSlider("PromptReachMultiplier", {
-        Text = "Prompt Reach Multiplier",
+        Text = "远程开门距离调节",
         Default = 1,
         Min = 1,
         Max = 2,
@@ -978,7 +978,7 @@ end
 
 local AutomationGroupBox = Tabs.Main:AddRightGroupbox("Automation") do
     AutomationGroupBox:AddToggle("AutoInteract", {
-        Text = "Auto Interact",
+        Text = "自动互动【秒开有锁门】",
         Default = false
     }):AddKeyPicker("AutoInteractKey", {
         Default = "R",
@@ -987,18 +987,18 @@ local AutomationGroupBox = Tabs.Main:AddRightGroupbox("Automation") do
     })
 
     AutomationGroupBox:AddToggle("AutoHeartbeat", {
-        Text = "Auto Heartbeat Minigame",
+        Text = "自动心跳迷你游戏",
         Default = false
     })
 
     if isHotel or isFools then
         AutomationGroupBox:AddToggle("AutoLibrarySolver", {
-            Text = "Auto Library Code",
+            Text = "自动图书馆密码",
             Default = false
         })
 
         AutomationGroupBox:AddToggle("AutoBreakerSolver", {
-            Text = "Auto Breaker Box",
+            Text = "自动断路器盒",
             Default = false
         })
 
@@ -1112,7 +1112,7 @@ end
 
 local MiscGroupBox = Tabs.Main:AddRightGroupbox("Misc") do
     MiscGroupBox:AddButton({
-        Text = "Play Again",
+        Text = "再玩一次",
         Func = function()
             remotesFolder.PlayAgain:FireServer()
         end,
@@ -1120,7 +1120,7 @@ local MiscGroupBox = Tabs.Main:AddRightGroupbox("Misc") do
     })
 
     MiscGroupBox:AddButton({
-        Text = "Lobby",
+        Text = "返回大厅",
         Func = function()
             remotesFolder.Lobby:FireServer()
         end,
@@ -1132,39 +1132,39 @@ end
 
 local AntiEntityGroupBox = Tabs.Exploits:AddLeftGroupbox("Anti-Entity") do
     AntiEntityGroupBox:AddToggle("AntiHalt", {
-        Text = "Anti-Halt",
+        Text = "删除傻逼halt",
         Default = false
     })
 
     AntiEntityGroupBox:AddToggle("AntiScreech", {
-        Text = "Anti-Screech",
+        Text = "删除小黑子",
         Default = false
     })
 
     AntiEntityGroupBox:AddToggle("AntiDupe", {
-        Text = "Anti-Dupe",
+        Text = "删除假门",
         Default = false
     })
 
     AntiEntityGroupBox:AddToggle("AntiEyes", {
-        Text = "Anti-" .. (isBackdoor and "Lookman" or "Eyes"),
+        Text = "删除" .. (isBackdoor and "Lookman" or "鲨臂眼睛"),
         Default = false
     })
 
     AntiEntityGroupBox:AddToggle("AntiSnare", {
-        Text = "Anti-Snare",
+        Text = "移除地刺",
         Default = false
     })
 end
 
 local BypassGroupBox = Tabs.Exploits:AddRightGroupbox("Bypass") do
     BypassGroupBox:AddToggle("SpeedBypass", {
-        Text = "Speed Bypass",
+        Text = "速度",
         Default = false
     })
     
     BypassGroupBox:AddToggle("DeleteSeek", {
-        Text = "Delete Seek (FE)",
+        Text = "删除老寒腿(FE)",
         Default = false
     })
 end
