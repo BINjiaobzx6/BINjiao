@@ -140,7 +140,7 @@ local Options = getgenv().Linoria.Options
 local Toggles = getgenv().Linoria.Toggles
 
 local Window = Library:CreateWindow({
-	Title = "mspaint v2",
+	Title = "MS V2 DOORS 汉化作者：小玄奘",
 	Center = true,
 	AutoShow = true,
 	Resizable = true,
@@ -279,9 +279,9 @@ function Script.Functions.DoorESP(room)
         end
 
         local doorEsp = Script.Functions.ESP({
-            Type = "Door",
+            Type = "门透视",
             Object = doors > 1 and door or door:WaitForChild("Door"),
-            Text = locked and string.format("Door %s [Locked]", room.Name + 1) or string.format("Door %s", room.Name + 1),
+            Text = locked and string.format("门 %s [Locked]", room.Name + 1) or string.format("门 %s", room.Name + 1),
             Color = Options.DoorEspColor.Value
         })
 
@@ -309,7 +309,7 @@ function Script.Functions.ObjectiveESP(room)
 
         if generator then
             Script.Functions.ESP({
-                Type = "Objective",
+                Type = "钥匙之类透视",
                 Object = generator,
                 Text = "Generator",
                 Color = Options.ObjectiveEspColor.Value
