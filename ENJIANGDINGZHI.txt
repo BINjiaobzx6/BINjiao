@@ -3318,6 +3318,11 @@ local AntiEntityGroupBox = Tabs.Exploits:AddLeftGroupbox("防怪物伤害") do
         Text = "移除恩酱",
         Default = false
     })
+    
+    AntiEntityGroupBox:AddToggle("AntiHalt", {
+        Text = "移除恩酱",
+        Default = false
+    })
 
     AntiEntityGroupBox:AddToggle("AntiScreech", {
         Text = "移除恩酱",
@@ -3345,6 +3350,31 @@ local AntiEntityGroupBox = Tabs.Exploits:AddLeftGroupbox("防怪物伤害") do
         Visible = not Script.IsFools
     })
 end
+
+    AntiEntityGroupBox:AddToggle("AntiHalt", {
+        Text = "移除恩酱",
+        Default = false
+    })
+
+AntiEntityGroupBox:AddToggle("AntiHalt", {
+        Text = "移除恩酱",
+        Default = false
+    })
+
+AntiEntityGroupBox:AddToggle("AntiHalt", {
+        Text = "移除恩酱",
+        Default = false
+    })
+
+AntiEntityGroupBox:AddToggle("AntiHalt", {
+        Text = "移除恩酱",
+        Default = false
+    })
+    
+AntiEntityGroupBox:AddToggle("AntiHalt", {
+        Text = "移除恩酱",
+        Default = false
+    })
 
 local TrollingGroupBox = Tabs.Exploits:AddLeftGroupbox("娱乐") do
     TrollingGroupBox:AddToggle("SpamOtherTools", {
@@ -5420,6 +5450,27 @@ local ESPTabBox = Tabs.Visuals:AddLeftTabbox() do
             Default = Color3.new(0, 1, 1),
         })
     
+        ESPTab:AddToggle("ObjectiveESP", {
+            Text = "恩酱透视",
+            Default = false,
+        }):AddColorPicker("ObjectiveEspColor", {
+            Default = Color3.new(0, 1, 0),
+        })
+    
+    ESPTab:AddToggle("ObjectiveESP", {
+            Text = "恩酱透视",
+            Default = false,
+        }):AddColorPicker("ObjectiveEspColor", {
+            Default = Color3.new(0, 1, 0),
+        })
+        
+        ESPTab:AddToggle("ObjectiveESP", {
+            Text = "恩酱透视",
+            Default = false,
+        }):AddColorPicker("ObjectiveEspColor", {
+            Default = Color3.new(0, 1, 0),
+        })        
+        
         ESPTab:AddToggle("ObjectiveESP", {
             Text = "恩酱透视",
             Default = false,
@@ -10246,7 +10297,7 @@ end
 
 function UICreator:CreateWindow()
     local Window = shared.Library:CreateWindow({
-        Title = "mspaint v3| 恩酱版 | " .. shared.ScriptName,
+        Title = "mspaint v3| 恩酱版【坤】 | " .. shared.ScriptName,
         Center = true,
         AutoShow = true,
         Resizable = true,
