@@ -99,7 +99,7 @@ function lib:Window(text, preset, closebind)
     Main.Name = "Main"
     Main.Parent = ui
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
-    Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    Main.BackgroundColor3 = Color3.fromRGB(255, 24, 24)
     Main.BorderSizePixel = 0
     Main.Position = UDim2.new(0.5, 0, 0.5, 0)
     Main.Size = UDim2.new(0, 0, 0, 0)
@@ -132,7 +132,7 @@ function lib:Window(text, preset, closebind)
 
     DragFrame.Name = "DragFrame"
     DragFrame.Parent = Main
-    DragFrame.BackgroundColor3 = Color3.fromRGB(255, 24, 24)
+    DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     DragFrame.BackgroundTransparency = 1.000
     DragFrame.Size = UDim2.new(0, 560, 0, 41)
 
@@ -248,7 +248,7 @@ function lib:Window(text, preset, closebind)
         OkayBtnTitle.Size = UDim2.new(0, 181, 0, 42)
         OkayBtnTitle.Font = Enum.Font.Gotham
         OkayBtnTitle.Text = textbtn
-        OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 24, 24)
+        OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         OkayBtnTitle.TextSize = 14.000
         OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -347,7 +347,7 @@ function lib:Window(text, preset, closebind)
         TabTitle.Font = Enum.Font.Gotham
         TabTitle.Text = text
         TabTitle.TextColor3 = Color3.fromRGB(255, 24, 24)
-        TabTitle.Size = 14.000
+        TabTitle.TextSize = 14.000
         TabTitle.TextXAlignment = Enum.TextXAlignment.Left
 
         TabBtnIndicator.Name = "TabBtnIndicator"
@@ -391,7 +391,7 @@ function lib:Window(text, preset, closebind)
         if fs == false then
             fs = true
             TabBtnIndicator.Size = UDim2.new(0, 13, 0, 2)
-            TabTitle.TextColor3 = Color3.fromRGB(255, 24, 24)
+            TabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             Tab.Visible = true
         end
 
