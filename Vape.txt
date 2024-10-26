@@ -248,7 +248,7 @@ function lib:Window(text, preset, closebind)
         OkayBtnTitle.Size = UDim2.new(0, 181, 0, 42)
         OkayBtnTitle.Font = Enum.Font.Gotham
         OkayBtnTitle.Text = textbtn
-        OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+        OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 24, 24)
         OkayBtnTitle.TextSize = 14.000
         OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -346,8 +346,8 @@ function lib:Window(text, preset, closebind)
         TabTitle.Size = UDim2.new(0, 107, 0, 21)
         TabTitle.Font = Enum.Font.Gotham
         TabTitle.Text = text
-        TabTitle.TextColor3 = Color3.fromRGB(150, 150, 150)
-        TabTitle.TextSize = 14.000
+        TabTitle.TextColor3 = Color3.fromRGB(255, 24, 24)
+        TabTitle.Size = 14.000
         TabTitle.TextXAlignment = Enum.TextXAlignment.Left
 
         TabBtnIndicator.Name = "TabBtnIndicator"
@@ -391,7 +391,7 @@ function lib:Window(text, preset, closebind)
         if fs == false then
             fs = true
             TabBtnIndicator.Size = UDim2.new(0, 13, 0, 2)
-            TabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TabTitle.TextColor3 = Color3.fromRGB(255, 24, 24)
             Tab.Visible = true
         end
 
