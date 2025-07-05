@@ -1,1 +1,11 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/XKscript/refs/heads/main/XKscript.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DevSloPo/Notifica/refs/heads/main/Main.lua"))()
+Httadmin.send("警告", "请使用新版XK链接，旧版不再支持", 10, "rbxassetid://78892482588180")
+Httadmin.send("警告!!!", "已复制在你的粘贴板", 5, "rbxassetid://78892482588180")
+local clipBoard = "loadstring(game:HttpGet(('https://github.com/devslopo/DVES/raw/main/XK%20Hub')))()"
+
+if setclipboard then
+    setclipboard(clipBoard)
+    print("已复制到剪贴板！")
+else
+    print("你的执行器不支持 setclipboard")
+end
